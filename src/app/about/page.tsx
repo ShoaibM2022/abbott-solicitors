@@ -19,10 +19,10 @@ const values = [
 ];
 
 const accreditations = [
-  { src: "/badge-sra.webp",           alt: "Community Legal Service",            w: 48,  h: 72 },
-  { src: "/badge-legal.webp",          alt: "Resolution – First for Family Law",  w: 120, h: 33 },
-  { src: "/badge-lawsoc-asylum.png",   alt: "Law Society – Immigration & Asylum", w: 88,  h: 48 },
-  { src: "/badge-lawsoc-advanced.png", alt: "Law Society – Immigration Advanced",  w: 88,  h: 48 },
+  { src: "/badge-sra.png",             alt: "Solicitors Regulation Authority",    w: 600, h: 600 },
+  { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",  w: 852, h: 568 },
+  { src: "/badge-lawsoc-asylum.png",   alt: "Law Society – Immigration & Asylum", w: 920, h: 500 },
+  { src: "/badge-lawsoc-advanced.png", alt: "Law Society – Immigration Advanced",  w: 320, h: 320 },
 ];
 
 export default function AboutPage() {
