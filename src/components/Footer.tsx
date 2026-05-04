@@ -36,10 +36,10 @@ const offices = [
 ];
 
 const badges = [
-  { src: "/badge-sra.png",           alt: "Solicitors Regulation Authority",                    w: 600, h: 600 },
-  { src: "/badge-legal.png",         alt: "Resolution – First for Family Law",                  w: 852, h: 568 },
-  { src: "/badge-lawsoc-asylum.png", alt: "Law Society Accredited – Immigration & Asylum",      w: 920, h: 500 },
-  { src: "/badge-lawsoc-advanced.png", alt: "Law Society Accredited – Immigration Law Advanced", w: 320, h: 320 },
+  { src: "/badge-sra.png",           alt: "Solicitors Regulation Authority",                    w: 600, h: 600, href: "https://www.sra.org.uk/" },
+  { src: "/badge-legal.png",         alt: "Resolution – First for Family Law",                  w: 852, h: 568, href: "https://resolution.org.uk/" },
+  { src: "/badge-lawsoc-asylum.png", alt: "Law Society Accredited – Immigration & Asylum",      w: 920, h: 500, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-and-asylum-law-accreditation" },
+  { src: "/badge-lawsoc-advanced.png", alt: "Law Society Accredited – Immigration Law Advanced", w: 320, h: 320, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-law-advanced-accreditation" },
 ];
 
 const socials = [
@@ -208,18 +208,19 @@ export default function Footer() {
           <p className="text-[#8A8A94]/50 text-[10px] tracking-[0.32em] uppercase font-sans mb-6">
             Accreditations &amp; Memberships
           </p>
-          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-            {badges.map(({ src, alt, w, h }) => (
-              <div key={src} className="bg-white px-4 py-2 flex items-center justify-center">
+          <div className="flex flex-wrap items-center gap-6 sm:gap-8">
+            {badges.map(({ src, alt, w, h, href }) => (
+              <a key={src} href={href} target="_blank" rel="noopener noreferrer" aria-label={alt}
+                className="opacity-70 hover:opacity-100 transition-opacity duration-200">
                 <Image
                   src={src}
                   alt={alt}
                   width={w}
                   height={h}
                   className="object-contain"
-                  style={{ height: 40, width: "auto" }}
+                  style={{ height: 44, width: "auto" }}
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>

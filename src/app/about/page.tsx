@@ -19,10 +19,10 @@ const values = [
 ];
 
 const accreditations = [
-  { src: "/badge-sra.png",             alt: "Solicitors Regulation Authority",    w: 600, h: 600 },
-  { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",  w: 852, h: 568 },
-  { src: "/badge-lawsoc-asylum.png",   alt: "Law Society – Immigration & Asylum", w: 920, h: 500 },
-  { src: "/badge-lawsoc-advanced.png", alt: "Law Society – Immigration Advanced",  w: 320, h: 320 },
+  { src: "/badge-sra.png",             alt: "Solicitors Regulation Authority",    w: 600, h: 600, href: "https://www.sra.org.uk/" },
+  { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",  w: 852, h: 568, href: "https://resolution.org.uk/" },
+  { src: "/badge-lawsoc-asylum.png",   alt: "Law Society – Immigration & Asylum", w: 920, h: 500, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-and-asylum-law-accreditation" },
+  { src: "/badge-lawsoc-advanced.png", alt: "Law Society – Immigration Advanced",  w: 320, h: 320, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-law-advanced-accreditation" },
 ];
 
 export default function AboutPage() {
@@ -121,12 +121,13 @@ export default function AboutPage() {
             <h2 className="serif text-[clamp(1.6rem,3vw,2.5rem)] text-[#F0EDE6] font-light mt-3 mb-10">
               Recognised for Excellence
             </h2>
-            <div className="flex flex-wrap items-center gap-6 sm:gap-8">
-              {accreditations.map(({ src, alt, w, h }) => (
-                <div key={src} className="bg-white px-5 py-3 flex items-center justify-center">
+            <div className="flex flex-wrap items-center gap-8 sm:gap-12">
+              {accreditations.map(({ src, alt, w, h, href }) => (
+                <a key={src} href={href} target="_blank" rel="noopener noreferrer" aria-label={alt}
+                  className="opacity-80 hover:opacity-100 transition-opacity duration-200">
                   <Image src={src} alt={alt} width={w} height={h}
-                    className="object-contain" style={{ height: 52, width: "auto" }} />
-                </div>
+                    className="object-contain" style={{ height: 56, width: "auto" }} />
+                </a>
               ))}
             </div>
           </div>
