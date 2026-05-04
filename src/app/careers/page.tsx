@@ -93,7 +93,7 @@ export default function CareersPage() {
           </div>
         </section>
 
-        <PageCTA heading="Interested in Joining Us?" subtext="Email your CV and cover letter to careers@abbottsolicitors.com and we will be in touch." />
+        <PageCTA heading="Interested in Joining Us?" subtext={<>Email your CV and cover letter to <a href="mailto:careers@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">careers@abbottsolicitors.com</a> and we will be in touch.</>} />
         <Footer />
       </main>
     </SmoothScrollProvider>

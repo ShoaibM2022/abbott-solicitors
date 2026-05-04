@@ -26,10 +26,10 @@ export default function ComplaintsPage() {
           <div className="max-w-3xl mx-auto flex flex-col gap-10">
             {[
               { step: "Step 1", title: "Contact Your Solicitor", body: "In the first instance, please raise your concern directly with the solicitor or caseworker handling your matter. Many issues can be resolved informally and quickly at this stage." },
-              { step: "Step 2", title: "Formal Written Complaint", body: "If you remain unhappy, submit a formal written complaint to our Complaints Manager at Abbott Solicitors, Abbott House, Unit 9, 729 Capability Green, Luton LU1 3LU, or by email to complaints@abbottsolicitors.com." },
+              { step: "Step 2", title: "Formal Written Complaint", body: <>If you remain unhappy, submit a formal written complaint to our Complaints Manager at Abbott Solicitors, Abbott House, Unit 9, 729 Capability Green, Luton LU1 3LU, or by email to <a href="mailto:complaints@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">complaints@abbottsolicitors.com</a>.</> },
               { step: "Step 3", title: "Our Response", body: "We will acknowledge your complaint within 3 working days and aim to provide a full written response within 8 weeks of receipt." },
-              { step: "Step 4", title: "Legal Ombudsman", body: "If you are not satisfied with our response, you may refer your complaint to the Legal Ombudsman within 6 months of our final response. Tel: 0300 555 0333 · legalombudsman.org.uk" },
-              { step: "Step 5", title: "SRA Concerns", body: "If your concern relates to our conduct, you may also contact the Solicitors Regulation Authority (SRA) at sra.org.uk." },
+              { step: "Step 4", title: "Legal Ombudsman", body: <>If you are not satisfied with our response, you may refer your complaint to the Legal Ombudsman within 6 months of our final response. Tel: <a href="tel:+443005550333" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">0300 555 0333</a> · <a href="https://www.legalombudsman.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">legalombudsman.org.uk</a></> },
+              { step: "Step 5", title: "SRA Concerns", body: <>If your concern relates to our conduct, you may also contact the Solicitors Regulation Authority (SRA) at <a href="https://www.sra.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">sra.org.uk</a>.</> },
             ].map(({ step, title, body }, i) => (
               <div key={step} className={`flex gap-6 wicked-slideRight wicked-delay-${i + 1}`}>
                 <div className="shrink-0 flex flex-col items-center gap-2">

@@ -56,16 +56,7 @@ We will never sell your personal data to third parties for marketing purposes.`,
   },
   {
     title: "6. Your Rights",
-    body: `Under GDPR you have the right to:
-
-• Access the personal data we hold about you.
-• Rectify inaccurate data.
-• Erase your data in certain circumstances.
-• Restrict or object to processing.
-• Data portability.
-• Withdraw consent at any time where processing is based on consent.
-
-To exercise any of these rights, please contact us in writing at our Luton office or by email at info@abbottsolicitors.com.`,
+    body: <>{"Under GDPR you have the right to:\n\n• Access the personal data we hold about you.\n• Rectify inaccurate data.\n• Erase your data in certain circumstances.\n• Restrict or object to processing.\n• Data portability.\n• Withdraw consent at any time where processing is based on consent.\n\nTo exercise any of these rights, please contact us in writing at our Luton office or by email at "}<a href="mailto:info@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">info@abbottsolicitors.com</a>{"."}</>,
   },
   {
     title: "7. Cookies",
@@ -81,7 +72,7 @@ To exercise any of these rights, please contact us in writing at our Luton offic
   },
   {
     title: "10. Complaints",
-    body: `If you are unhappy with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO) at www.ico.org.uk or by calling 0303 123 1113. We would, however, appreciate the opportunity to address your concerns first — please contact us directly.`,
+    body: <>{"If you are unhappy with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO) at "}<a href="https://www.ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">www.ico.org.uk</a>{" or by calling "}<a href="tel:+443031231113" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">0303 123 1113</a>{". We would, however, appreciate the opportunity to address your concerns first — please contact us directly."}</>,
   },
 ];
 

@@ -1,8 +1,10 @@
 import Link from "next/link";
 
+import type { ReactNode } from "react";
+
 interface PageCTAProps {
   heading?: string;
-  subtext?: string;
+  subtext?: ReactNode;
 }
 
 export default function PageCTA({
