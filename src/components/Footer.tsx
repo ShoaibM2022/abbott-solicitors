@@ -208,17 +208,18 @@ export default function Footer() {
           <p className="text-[#8A8A94]/50 text-[10px] tracking-[0.32em] uppercase font-sans mb-6">
             Accreditations &amp; Memberships
           </p>
-          <div className="flex flex-wrap items-center gap-6 sm:gap-8">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             {badges.map(({ src, alt, w, h }) => (
-              <Image
-                key={src}
-                src={src}
-                alt={alt}
-                width={w}
-                height={h}
-                className="logo-filter object-contain"
-                style={{ height: 40, width: "auto" }}
-              />
+              <div key={src} className="bg-white px-4 py-2 flex items-center justify-center">
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={w}
+                  height={h}
+                  className="object-contain"
+                  style={{ height: 40, width: "auto" }}
+                />
+              </div>
             ))}
           </div>
         </div>

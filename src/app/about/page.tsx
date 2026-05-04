@@ -121,10 +121,12 @@ export default function AboutPage() {
             <h2 className="serif text-[clamp(1.6rem,3vw,2.5rem)] text-[#F0EDE6] font-light mt-3 mb-10">
               Recognised for Excellence
             </h2>
-            <div className="flex flex-wrap items-center gap-8 sm:gap-12">
+            <div className="flex flex-wrap items-center gap-6 sm:gap-8">
               {accreditations.map(({ src, alt, w, h }) => (
-                <Image key={src} src={src} alt={alt} width={w} height={h}
-                  className="logo-filter object-contain" style={{ height: 48, width: "auto" }} />
+                <div key={src} className="bg-white px-5 py-3 flex items-center justify-center">
+                  <Image src={src} alt={alt} width={w} height={h}
+                    className="object-contain" style={{ height: 52, width: "auto" }} />
+                </div>
               ))}
             </div>
           </div>
