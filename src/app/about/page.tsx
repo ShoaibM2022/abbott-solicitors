@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import PageCTA from "@/components/PageCTA";
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
+import BadgeRow from "@/components/BadgeRow";
 import Image from "next/image";
 import type { Metadata } from "next";
 
@@ -117,19 +118,11 @@ export default function AboutPage() {
         {/* ── Accreditations ── */}
         <section className="py-14 px-4 sm:px-6 lg:px-10 bg-[#0D1B35]/30">
           <div className="max-w-7xl mx-auto">
-            <span className="text-[#C9A84C] text-[10px] tracking-[0.38em] uppercase font-sans">Accreditations</span>
-            <h2 className="serif text-[clamp(1.6rem,3vw,2.5rem)] text-[#F0EDE6] font-light mt-3 mb-10">
+            <span className="text-[#C9A84C] text-[10px] tracking-[0.38em] uppercase font-sans wicked-fadeIn">Accreditations</span>
+            <h2 className="serif text-[clamp(1.6rem,3vw,2.5rem)] text-[#F0EDE6] font-light mt-3 mb-10 wicked-slideUp">
               Recognised for Excellence
             </h2>
-            <div className="flex flex-wrap items-center gap-8 sm:gap-12">
-              {accreditations.map(({ src, alt, w, h, href }) => (
-                <a key={src} href={href} target="_blank" rel="noopener noreferrer" aria-label={alt}
-                  className="opacity-80 hover:opacity-100 transition-opacity duration-200">
-                  <Image src={src} alt={alt} width={w} height={h}
-                    className="object-contain" style={{ height: 56, width: "auto" }} />
-                </a>
-              ))}
-            </div>
+            <BadgeRow badges={accreditations} height={60} />
           </div>
         </section>
 

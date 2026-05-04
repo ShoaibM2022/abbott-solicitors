@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BadgeRow from "@/components/BadgeRow";
 
 const practiceLinks = [
   { label: "Immigration Law",  href: "/immigration" },
@@ -208,21 +209,7 @@ export default function Footer() {
           <p className="text-[#8A8A94]/50 text-[10px] tracking-[0.32em] uppercase font-sans mb-6">
             Accreditations &amp; Memberships
           </p>
-          <div className="flex flex-wrap items-center gap-6 sm:gap-8">
-            {badges.map(({ src, alt, w, h, href }) => (
-              <a key={src} href={href} target="_blank" rel="noopener noreferrer" aria-label={alt}
-                className="opacity-70 hover:opacity-100 transition-opacity duration-200">
-                <Image
-                  src={src}
-                  alt={alt}
-                  width={w}
-                  height={h}
-                  className="object-contain"
-                  style={{ height: 44, width: "auto" }}
-                />
-              </a>
-            ))}
-          </div>
+          <BadgeRow badges={badges} height={44} />
         </div>
 
         {/* Bottom bar */}
