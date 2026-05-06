@@ -20,9 +20,9 @@ export default function CivilLitigationPage() {
       title="Civil Dispute"
       titleAccent="Resolution"
       subtitle="Strategic, cost-effective representation in commercial and civil disputes. From debt recovery to professional negligence, we pursue your claim with precision."
-      intro="Civil disputes can be costly and disruptive if not managed strategically from the outset. Abbott Solicitors' litigation team combines robust court advocacy with a keen focus on early resolution — pursuing the most cost-effective route to a successful outcome. We represent both claimants and defendants across the County Court and High Court."
+      intro="Civil disputes can be costly and disruptive if not managed strategically from the outset. Abbott Solicitors' litigation team combines robust court advocacy with a keen focus on early resolution, pursuing the most cost-effective route to a successful outcome. We represent both claimants and defendants across the County Court and High Court."
       services={[
-        { title: "Contract Disputes",        desc: "Breach of contract claims — including construction, supply, services and commercial agreements." },
+        { title: "Contract Disputes",        desc: "Breach of contract claims, including construction, supply, services and commercial agreements." },
         { title: "Debt Recovery",            desc: "Efficient recovery of outstanding debts, including statutory demands, CCJs and enforcement." },
         { title: "Professional Negligence",  desc: "Claims against solicitors, accountants, surveyors, architects and other professionals for substandard advice." },
         { title: "Injunctions",              desc: "Emergency injunctive relief to freeze assets, prevent breaches or protect confidential information." },
@@ -31,9 +31,9 @@ export default function CivilLitigationPage() {
       ]}
       process={[
         { step: "01", title: "Case Assessment",    desc: "We review the merits of your claim and advise on the most strategic and cost-effective route forward." },
-        { step: "02", title: "Pre-Action Protocol",desc: "Letters before action and pre-action correspondence — often resolving disputes before court proceedings." },
+        { step: "02", title: "Pre-Action Protocol",desc: "Letters before action and pre-action correspondence, often resolving disputes before court proceedings." },
         { step: "03", title: "Proceedings",        desc: "If settlement fails, we issue proceedings and manage every stage of the court timetable." },
-        { step: "04", title: "Trial or Settlement",desc: "Robust advocacy at trial or negotiated settlement — whichever delivers the best result for you." },
+        { step: "04", title: "Trial or Settlement",desc: "Robust advocacy at trial or negotiated settlement, whichever delivers the best result for you." },
       ]}
       whyUs={[
         "County Court and High Court experience",

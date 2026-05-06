@@ -19,27 +19,27 @@ export default function PersonalInjuryPage() {
       title="Personal Injury"
       titleAccent="Claims"
       subtitle="No win, no fee representation for those injured through no fault of their own. We pursue maximum compensation for injuries caused by accidents, negligence and unsafe conditions."
-      intro="If you have been injured due to someone else's negligence, you may be entitled to significant compensation. Abbott Solicitors' personal injury team operates on a no win, no fee basis — meaning you face no financial risk in bringing a claim. We investigate every aspect of your case to maximise your settlement."
+      intro="If you have been injured due to someone else's negligence, you may be entitled to significant compensation. Abbott Solicitors' personal injury team operates on a no win, no fee basis, meaning you face no financial risk in bringing a claim. We investigate every aspect of your case to maximise your settlement."
       services={[
         { title: "Road Traffic Accidents",   desc: "Claims for drivers, passengers, cyclists and pedestrians injured in road traffic collisions." },
         { title: "Workplace Injuries",       desc: "Employer liability claims for injuries caused by unsafe working conditions or failure to provide PPE." },
         { title: "Clinical Negligence",      desc: "Medical negligence claims against hospitals, GPs and other healthcare providers for substandard care." },
         { title: "Slip, Trip & Fall",        desc: "Occupier liability claims for injuries caused by dangerous or poorly maintained premises." },
         { title: "Industrial Disease",       desc: "Claims for asbestos exposure, vibration white finger and other occupational diseases." },
-        { title: "Fatal Accident Claims",    desc: "Bereavement claims and dependency claims following a fatal accident — handled with the utmost sensitivity." },
+        { title: "Fatal Accident Claims",    desc: "Bereavement claims and dependency claims following a fatal accident, handled with the utmost sensitivity." },
       ]}
       process={[
         { step: "01", title: "Free Assessment",    desc: "We assess your claim for free and advise whether a no win, no fee conditional fee agreement is appropriate." },
         { step: "02", title: "Investigation",      desc: "Evidence gathered, medical records obtained and liability investigated thoroughly." },
         { step: "03", title: "Negotiation",        desc: "We negotiate robustly with the defendant's insurers to achieve the maximum possible settlement." },
-        { step: "04", title: "Compensation",       desc: "Settlement paid — or if necessary, proceedings issued and your case taken to trial." },
+        { step: "04", title: "Compensation",       desc: "Settlement paid. If necessary, proceedings are issued and your case taken to trial." },
       ]}
       whyUs={[
-        "No win, no fee — zero financial risk to you",
+        "No win, no fee: zero financial risk to you",
         "Specialist clinical negligence solicitors",
         "Road traffic accident experts",
         "Maximum compensation focus on every case",
-        "Free initial consultation — 15 minutes",
+        "Free 15-minute initial consultation",
         "UK-wide service including virtual appointments",
       ]}
       icon={icon}

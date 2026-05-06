@@ -1,7 +1,7 @@
 import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import StatsBar from "@/components/StatsBar";
+import CaseHighlights from "@/components/CaseHighlights";
 import ServicesSection from "@/components/ServicesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
@@ -13,7 +13,7 @@ export default function Home() {
       <main className="bg-[#0A0B0F] min-h-screen text-[#F0EDE6]">
         <Navbar />
         <Hero />
-        <StatsBar />
+        <CaseHighlights />
         <ServicesSection />
         <TestimonialsSection />
         <CTASection />

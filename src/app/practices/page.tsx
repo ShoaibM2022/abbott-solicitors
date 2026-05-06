@@ -28,7 +28,7 @@ const areas = [
     href: "/family-law",
     overline: "Family Law",
     title: "Family Law",
-    desc: "Divorce, financial settlements, child arrangements, domestic abuse protection and cohabitation agreements — handled with care and expertise.",
+    desc: "Divorce, financial settlements, child arrangements, domestic abuse protection and cohabitation agreements, handled with care and expertise.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <circle cx="16" cy="14" r="6"/><circle cx="32" cy="14" r="6"/>
@@ -41,7 +41,7 @@ const areas = [
     href: "/housing-law",
     overline: "Housing Law",
     title: "Housing Law",
-    desc: "Disrepair claims, unlawful eviction, possession proceedings, homelessness appeals — protecting tenants and homeowners across England.",
+    desc: "Disrepair claims, unlawful eviction, possession proceedings and homelessness appeals, protecting tenants and homeowners across England.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <path d="M4 24L24 6l20 18"/><rect x="10" y="24" width="28" height="18"/>
@@ -53,7 +53,7 @@ const areas = [
     href: "/conveyancing",
     overline: "Conveyancing",
     title: "Conveyancing",
-    desc: "Residential and commercial conveyancing for buyers, sellers and landlords — efficient, transparent and fully managed from offer to completion.",
+    desc: "Residential and commercial conveyancing for buyers, sellers and landlords, efficient, transparent and fully managed from offer to completion.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <rect x="6" y="8" width="36" height="32" rx="2"/>
@@ -78,7 +78,7 @@ const areas = [
     href: "/employment",
     overline: "Employment Law",
     title: "Employment Law",
-    desc: "Unfair dismissal, discrimination, settlement agreements, TUPE and whistleblowing — protecting employees at every stage.",
+    desc: "Unfair dismissal, discrimination, settlement agreements, TUPE and whistleblowing, protecting employees at every stage.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <rect x="4" y="16" width="40" height="26" rx="3"/>
@@ -90,7 +90,7 @@ const areas = [
     href: "/civil-litigation",
     overline: "Civil Litigation",
     title: "Civil Litigation",
-    desc: "Contract disputes, debt recovery, professional negligence and injunctions — strategic representation in County Court and High Court.",
+    desc: "Contract disputes, debt recovery, professional negligence and injunctions: strategic representation in County Court and High Court.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <path d="M24 4v40M12 16h24M8 10l8 12M40 10l-8 12M8 38h32"/>
@@ -102,7 +102,7 @@ const areas = [
     href: "/criminal-defence",
     overline: "Criminal Defence",
     title: "Criminal Defence",
-    desc: "24/7 police station attendance, Magistrates and Crown Court advocacy — immediate expert defence from the moment of arrest.",
+    desc: "24/7 police station attendance, Magistrates and Crown Court advocacy: immediate expert defence from the moment of arrest.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <path d="M24 4l18 7v11c0 12-8 20-18 22C14 42 6 34 6 22V11z"/>
@@ -122,7 +122,7 @@ export default function PracticesPage() {
           overline="Our Expertise"
           title="Practice"
           titleAccent="Areas"
-          subtitle="Eight specialist practice areas under one roof — each led by experienced solicitors dedicated to achieving the best outcome for you."
+          subtitle="Eight specialist practice areas under one roof, each led by experienced solicitors dedicated to achieving the best outcome for you."
           breadcrumbs={[{ label: "Practice Areas" }]}
         />
 

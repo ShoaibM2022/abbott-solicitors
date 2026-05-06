@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 
 const reasons = [
-  { title: "Meaningful Work",        desc: "Work on cases that genuinely impact people's lives — from protecting asylum seekers to securing family rights." },
+  { title: "Meaningful Work",        desc: "Work on cases that genuinely impact people's lives, from protecting asylum seekers to securing family rights." },
   { title: "Career Development",     desc: "We invest in continuous professional development, training and mentorship at every stage of your career." },
   { title: "Collaborative Culture",  desc: "Our team of 18 works closely together. Every voice is valued, and every team member contributes to client outcomes." },
-  { title: "Legal Aid Practice",     desc: "Gain rare hands-on experience in legally aided work — immigration, housing and family law — alongside private client matters." },
+  { title: "Legal Aid Practice",     desc: "Gain rare hands-on experience in legally aided work across immigration, housing and family law, alongside private client matters." },
 ];
 
 const roles = [

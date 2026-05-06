@@ -131,7 +131,7 @@ export default function ServicesSection() {
             Expert Legal <em className="italic text-[#C9A84C]">Services</em>
           </h2>
           <p className="text-[#8A8A94] text-base md:text-lg leading-relaxed max-w-xl mt-4 font-sans">
-            Comprehensive legal support across eight practice areas — with offices
+            Comprehensive legal support across eight practice areas, with offices
             in Luton and Birmingham, and virtual services available UK-wide.
           </p>
         </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const areas = [
-  { title: "Immigration",   desc: "We provide legal aid for asylum claims, human rights applications and certain immigration appeals — ensuring everyone has access to proper representation." },
+  { title: "Immigration",   desc: "We provide legal aid for asylum claims, human rights applications and certain immigration appeals, ensuring everyone has access to proper representation." },
   { title: "Housing Law",   desc: "Legal aid is available for eviction proceedings, homelessness appeals and certain disrepair claims. We will assess your eligibility at no cost." },
   { title: "Family Law",    desc: "Domestic abuse cases, child arrangement orders and certain family proceedings may qualify for legal aid. We handle these matters with full sensitivity." },
 ];
@@ -33,7 +33,7 @@ export default function LegalAidPage() {
           overline="Legal Aid Services"
           title="Access to Justice"
           titleAccent="For Everyone"
-          subtitle="Abbott Solicitors is committed to providing Legal Aid across Immigration, Housing and Family Law — ensuring that financial circumstances never prevent you from obtaining proper legal representation."
+          subtitle="Abbott Solicitors is committed to providing Legal Aid across Immigration, Housing and Family Law, ensuring that financial circumstances never prevent you from obtaining proper legal representation."
           breadcrumbs={[{ label: "Legal Aid" }]}
         />
 
@@ -106,7 +106,7 @@ export default function LegalAidPage() {
               {[
                 { n: "01", t: "Free Consultation",       d: "Contact us to arrange a free 15-minute initial consultation. We will discuss your situation and assess whether legal aid may apply." },
                 { n: "02", t: "Eligibility Assessment",  d: "We will carry out both a means test and merits test to confirm whether you qualify for Legal Aid funding." },
-                { n: "03", t: "Representation Begins",   d: "Once eligibility is confirmed, your case is opened and our specialists begin working on your matter — fully funded." },
+                { n: "03", t: "Representation Begins",   d: "Once eligibility is confirmed, your case is opened and our specialists begin working on your matter, fully funded." },
               ].map(({ n, t, d }) => (
                 <div key={n} className="wicked-fadeIn flex flex-col gap-4">
                   <span className="serif text-5xl text-[#C9A84C]/20 font-light">{n}</span>
@@ -118,7 +118,7 @@ export default function LegalAidPage() {
           </div>
         </section>
 
-        <PageCTA heading="Check Your Legal Aid Eligibility" subtext="Call us or book online for a free initial assessment — we will tell you straight away whether you qualify." />
+        <PageCTA heading="Check Your Legal Aid Eligibility" subtext="Call us or book online for a free initial assessment. We will advise you straight away whether you qualify." />
         <Footer />
       </main>
     </SmoothScrollProvider>

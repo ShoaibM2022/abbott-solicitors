@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Delivering Justice <em className="italic text-[#C9A84C]">Since 2012</em>
               </h2>
               <p className="text-[#8A8A94] text-[15px] leading-[1.9] font-sans">
-                Abbott Solicitors was established as an independent firm committed to providing skilled, accessible legal advice. Within our first two years, we achieved both Lexcel and SQM accreditations — a testament to the quality of our processes and client care.
+                Abbott Solicitors was established as an independent firm committed to providing skilled, accessible legal advice. Within our first two years, we achieved both Lexcel and SQM accreditations, a testament to the quality of our processes and client care.
               </p>
               <p className="text-[#8A8A94] text-[15px] leading-[1.9] font-sans">
                 We provide legal aid in Immigration, Housing and Family Law, ensuring that access to justice is not determined by financial means. We serve clients regardless of their background, and operate with full independence from any external pressures.
@@ -104,7 +104,7 @@ export default function AboutPage() {
           <div className="max-w-5xl mx-auto flex flex-col gap-10">
             {[
               { label: "Our Vision",   text: "To provide our clients with skilled legal advice in a timely and efficient manner, ensuring excellence at every stage of their matter." },
-              { label: "Our Mission",  text: "To deliver a network of innovative legal solutions, excellent legal representation and a dedication to quality customer service — accessible to all." },
+              { label: "Our Mission",  text: "To deliver a network of innovative legal solutions, excellent legal representation and a dedication to quality customer service, accessible to all." },
               { label: "Our Commitment", text: "We serve every client regardless of colour, age, marital status, gender, sexual orientation, race, belief, religion or disability." },
             ].map(({ label, text }, i) => (
               <div key={label} className={`wicked-slideRight wicked-delay-${i + 1} flex flex-col sm:flex-row gap-6 border-b border-[#C9A84C]/10 pb-10 last:border-0 last:pb-0`}>

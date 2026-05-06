@@ -37,7 +37,7 @@ export default function ContactPage() {
           overline="Get In Touch"
           title="We're Here"
           titleAccent="To Help"
-          subtitle="Free 15-minute initial consultations available across Immigration, Family Law, Housing, Employment and Civil Litigation — in person or virtually."
+          subtitle="Free 15-minute initial consultations available across Immigration, Family Law, Housing, Employment and Civil Litigation, in person or virtually."
           breadcrumbs={[{ label: "Contact" }]}
         />
 

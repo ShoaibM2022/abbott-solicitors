@@ -74,7 +74,7 @@ export default function TermsPage() {
           overline="Legal"
           title="Terms of"
           titleAccent="Business"
-          subtitle="Our client care standards, fee arrangements and professional obligations — applicable to all matters handled by Abbott Solicitors."
+          subtitle="Our client care standards, fee arrangements and professional obligations, applicable to all matters handled by Abbott Solicitors."
           breadcrumbs={[{ label: "Terms of Business" }]}
         />
 

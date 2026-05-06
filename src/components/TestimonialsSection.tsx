@@ -6,17 +6,17 @@ const testimonials = [
   {
     quote: "Abbott Solicitors handled my complex immigration case with exceptional care and professionalism. They kept me informed at every step and achieved a result beyond my expectations.",
     name: "R. Patel",
-    matter: "Immigration — Indefinite Leave to Remain",
+    matter: "Immigration: Indefinite Leave to Remain",
   },
   {
-    quote: "The team at Abbott navigated my housing dispute with precision and clarity. Their knowledge of UK housing law is outstanding — I felt genuinely supported throughout.",
+    quote: "The team at Abbott navigated my housing dispute with precision and clarity. Their knowledge of UK housing law is outstanding. I felt genuinely supported throughout.",
     name: "J. Williams",
-    matter: "Housing Law — Unlawful Eviction",
+    matter: "Housing Law: Unlawful Eviction",
   },
   {
     quote: "I was referred to Abbott Solicitors for my employment tribunal and could not be happier. Professional, thorough, and genuinely committed to justice. Highly recommended.",
     name: "S. Okonkwo",
-    matter: "Employment Law — Unfair Dismissal",
+    matter: "Employment Law: Unfair Dismissal",
   },
 ];
 

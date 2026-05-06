@@ -44,7 +44,7 @@ export default function CTASection() {
         {/* CTA buttons — stacked on mobile, inline on sm+ */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto mt-2">
           <a
-            href="tel:+441234567890"
+            href="tel:+441582737952"
             className="flex items-center justify-center gap-3 px-8 py-4 bg-[#C9A84C] text-[#0A0B0F] text-[11px] tracking-[0.2em] uppercase font-sans font-semibold transition-all duration-300 hover:bg-[#E8C97A]"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -67,8 +67,8 @@ export default function CTASection() {
         {/* Office locations — stacked on mobile, side-by-side on sm+ */}
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-12 mt-6 pt-8 border-t border-[#C9A84C]/10 w-full justify-center">
           {[
-            { city: "Luton Office",      addr: "123 George Street, Luton, LU1 2AB" },
-            { city: "Birmingham Office", addr: "45 Colmore Row, Birmingham, B3 2BS" },
+            { city: "Luton Office",      addr: "Abbott House, Unit 9, 729 Capability Green, Luton LU1 3LU" },
+            { city: "Birmingham Office", addr: "443–465 Coventry Road, Small Heath, Birmingham B10 0TJ" },
           ].map(({ city, addr }) => (
             <div key={city} className="flex flex-col items-center gap-1 text-center">
               <span className="text-[#C9A84C] text-[10px] tracking-[0.28em] uppercase font-sans">{city}</span>

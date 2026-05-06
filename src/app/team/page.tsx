@@ -85,7 +85,7 @@ export default function TeamPage() {
           overline="The People Behind Your Case"
           title="Our"
           titleAccent="Expert Team"
-          subtitle="A dedicated team of 18 legal professionals — barristers, solicitors, caseworkers and support staff — all committed to achieving the best outcome for you."
+          subtitle="A dedicated team of 18 legal professionals: barristers, solicitors, caseworkers and support staff, all committed to achieving the best outcome for you."
           breadcrumbs={[{ label: "Our Team" }]}
         />
 

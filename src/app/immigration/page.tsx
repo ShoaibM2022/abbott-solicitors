@@ -19,10 +19,10 @@ export default function ImmigrationPage() {
       title="UK Immigration"
       titleAccent="Specialists"
       subtitle="Trusted immigration solicitors serving clients across the UK and internationally. We handle the full spectrum of UK visa, asylum and nationality matters with proven expertise."
-      intro="Abbott Solicitors is recognised as one of the UK's leading firms for immigration and civil liberties law. Our solicitors have extensive experience across all areas of UK immigration law — from straightforward visa applications to complex asylum claims and judicial reviews. We provide both private and legally aided representation, ensuring access to expert advice regardless of your financial circumstances."
+      intro="Abbott Solicitors is recognised as one of the UK's leading firms for immigration and civil liberties law. Our solicitors have extensive experience across all areas of UK immigration law, from straightforward visa applications to complex asylum claims and judicial reviews. We provide both private and legally aided representation, ensuring access to expert advice regardless of your financial circumstances."
       services={[
         { title: "Entry Clearance Visas",        desc: "Spouse, fiancé, student, work, investor and visit visa applications prepared and submitted with precision." },
-        { title: "Leave to Remain",               desc: "Extensions, variations and applications for indefinite leave to remain — including 10-year and long residence routes." },
+        { title: "Leave to Remain",               desc: "Extensions, variations and applications for indefinite leave to remain, including 10-year and long residence routes." },
         { title: "Asylum & Human Rights",         desc: "Compassionate and thorough representation for asylum seekers and human rights applicants under Article 3 and 8 ECHR." },
         { title: "Immigration Appeals",           desc: "Appeals to the First-tier Tribunal and Upper Tribunal, including out-of-country appeals and judicial reviews." },
         { title: "British Citizenship",           desc: "Naturalisation, registration, and British Overseas citizenship applications handled by our specialist team." },

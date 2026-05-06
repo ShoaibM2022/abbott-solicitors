@@ -19,25 +19,25 @@ export default function EmploymentPage() {
       overline="Employment Law"
       title="Employment Law"
       titleAccent="Specialists"
-      subtitle="Protecting employees' rights across every stage of the employment relationship — from contracts and disputes to tribunal representation."
+      subtitle="Protecting employees' rights across every stage of the employment relationship, from contracts and disputes through to tribunal representation."
       intro="Employment law is complex and fast-moving. Whether you have been unfairly dismissed, subjected to workplace discrimination or are facing redundancy, Abbott Solicitors' employment team will advise you clearly on your rights and pursue the strongest possible outcome on your behalf."
       services={[
-        { title: "Unfair Dismissal",          desc: "Tribunal claims for employees dismissed without fair reason or procedure — including constructive dismissal." },
+        { title: "Unfair Dismissal",          desc: "Tribunal claims for employees dismissed without fair reason or procedure, including constructive dismissal." },
         { title: "Discrimination Claims",     desc: "Claims based on age, sex, race, disability, religion, sexual orientation and other protected characteristics." },
         { title: "Settlement Agreements",     desc: "Reviewing, negotiating and advising on settlement agreements (formerly compromise agreements) offered by employers." },
-        { title: "TUPE",                      desc: "Advice on Transfer of Undertakings — protecting your rights when a business or contract is transferred." },
+        { title: "TUPE",                      desc: "Advice on Transfer of Undertakings, protecting your rights when a business or contract is transferred." },
         { title: "Whistleblowing",            desc: "Protected disclosure claims for employees who have suffered detriment after raising a qualifying concern." },
-        { title: "Redundancy",               desc: "Ensuring fair redundancy selection and payment — and challenging unfair redundancy procedures." },
+        { title: "Redundancy",               desc: "Ensuring fair redundancy selection and payment, and challenging unfair redundancy procedures." },
       ]}
       process={[
-        { step: "01", title: "Free Consultation",   desc: "Understand your situation and your rights — free for 15 minutes with one of our employment solicitors." },
+        { step: "01", title: "Free Consultation",   desc: "Understand your situation and your rights. A free 15-minute consultation with one of our employment solicitors." },
         { step: "02", title: "Early Conciliation",  desc: "We notify ACAS and explore early settlement where appropriate before issuing tribunal proceedings." },
         { step: "03", title: "Tribunal Claim",      desc: "If settlement is not achieved, we prepare and file a detailed Employment Tribunal claim on your behalf." },
         { step: "04", title: "Hearing",             desc: "Our advocates represent you at the full tribunal hearing, presenting your case with clarity and force." },
       ]}
       whyUs={[
         "Experienced employment tribunal advocates",
-        "Fast turnaround — tribunal time limits are strict",
+        "Fast turnaround: tribunal time limits are strict",
         "Settlement agreement specialists",
         "Discrimination law expertise across all protected characteristics",
         "ACAS early conciliation managed on your behalf",
