@@ -130,7 +130,7 @@ export default function ServicesSection() {
           <h2 className="serif text-[clamp(2.2rem,4.5vw,3.8rem)] text-[#F0EDE6] font-light mt-3 leading-tight">
             Expert Legal <em className="italic text-[#C9A84C]">Services</em>
           </h2>
-          <p className="text-[#8A8A94] text-[14px] md:text-[15px] leading-relaxed max-w-xl mt-4 font-sans">
+          <p className="text-[#8A8A94] text-base md:text-lg leading-relaxed max-w-xl mt-4 font-sans">
             Comprehensive legal support across eight practice areas — with offices
             in Luton and Birmingham, and virtual services available UK-wide.
           </p>
@@ -155,12 +155,12 @@ export default function ServicesSection() {
                 <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300" />
 
                 {/* Title */}
-                <h3 className="serif text-[1.15rem] font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300">
+                <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300">
                   {title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[#8A8A94] text-[13px] leading-[1.75] font-sans flex-1">{desc}</p>
+                <p className="text-[#8A8A94] text-base leading-[1.75] font-sans flex-1">{desc}</p>
 
                 {/* Learn more */}
                 <div className="flex items-center gap-2 text-[#C9A84C]/45 group-hover:text-[#C9A84C] text-[11px] tracking-[0.18em] uppercase font-sans transition-all duration-300 group-hover:gap-3 mt-1">
