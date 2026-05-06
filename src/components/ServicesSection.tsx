@@ -84,9 +84,11 @@ const services = [
     desc: "Contract disputes, debt recovery, professional negligence and injunctions.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 3v18M5 21h14"/>
-        <path d="M3 6l4 8M7 6H3M7 14H3"/>
-        <path d="M17 6l4 8M21 6h-4M21 14h-4"/>
+        <path d="M12 3v18M8 21h8"/>
+        <path d="M5 7h14"/>
+        <path d="M5 7v6M19 7v6"/>
+        <path d="M2 13a3 3 0 0 0 6 0"/>
+        <path d="M16 13a3 3 0 0 0 6 0"/>
       </svg>
     ),
   },
@@ -141,18 +143,18 @@ export default function ServicesSection() {
           {services.map(({ href, num, title, desc, icon }, i) => (
             <TiltCard key={href} delay={i * 75} className="p-6">
               <Link href={href} className="flex flex-col gap-4 h-full group">
-                {/* Icon */}
-                <div className="w-6 h-6 text-[#C9A84C]/65 group-hover:text-[#C9A84C] transition-colors duration-300">
-                  {icon}
-                </div>
-
-                {/* Separator */}
-                <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300" />
-
                 {/* Title */}
                 <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300">
                   {title}
                 </h3>
+
+                {/* Separator */}
+                <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300" />
+
+                {/* Icon */}
+                <div className="w-6 h-6 text-[#C9A84C]/65 group-hover:text-[#C9A84C] transition-colors duration-300">
+                  {icon}
+                </div>
 
                 {/* Description */}
                 <p className="text-[#8A8A94] text-base leading-[1.75] font-sans flex-1">{desc}</p>

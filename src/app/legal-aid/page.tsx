@@ -102,18 +102,22 @@ export default function LegalAidPage() {
           <div className="max-w-5xl mx-auto">
             <span className="text-[#C9A84C] text-[10px] tracking-[0.38em] uppercase font-sans">How To Apply</span>
             <h2 className="serif text-[clamp(1.8rem,4vw,3rem)] text-[#F0EDE6] font-light mt-3 mb-10">The Process</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-              {[
-                { n: "01", t: "Free Consultation",       d: "Contact us to arrange a free 15-minute initial consultation. We will discuss your situation and assess whether legal aid may apply." },
-                { n: "02", t: "Eligibility Assessment",  d: "We will carry out both a means test and merits test to confirm whether you qualify for Legal Aid funding." },
-                { n: "03", t: "Representation Begins",   d: "Once eligibility is confirmed, your case is opened and our specialists begin working on your matter, fully funded." },
-              ].map(({ n, t, d }) => (
-                <div key={n} className="wicked-fadeIn flex flex-col gap-4">
-                  <span className="serif text-5xl text-[#C9A84C]/20 font-light">{n}</span>
-                  <h3 className="serif text-2xl text-[#F0EDE6]">{t}</h3>
-                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{d}</p>
-                </div>
-              ))}
+            <div className="relative">
+              {/* Timeline connector — sm+ only */}
+              <div className="absolute top-6 left-6 right-6 h-px bg-gradient-to-r from-[#C9A84C]/50 via-[#C9A84C]/30 to-[#C9A84C]/50 hidden sm:block pointer-events-none" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                {[
+                  { n: "01", t: "Free Consultation",       d: "Contact us to arrange a free 15-minute initial consultation. We will discuss your situation and assess whether legal aid may apply." },
+                  { n: "02", t: "Eligibility Assessment",  d: "We will carry out both a means test and merits test to confirm whether you qualify for Legal Aid funding." },
+                  { n: "03", t: "Representation Begins",   d: "Once eligibility is confirmed, your case is opened and our specialists begin working on your matter, fully funded." },
+                ].map(({ n, t, d }) => (
+                  <div key={n} className="wicked-fadeIn flex flex-col gap-4">
+                    <span className="relative z-10 serif text-5xl text-[#C9A84C]/40 font-light bg-[#0A0B0F] pr-3 w-fit">{n}</span>
+                    <h3 className="serif text-2xl text-[#F0EDE6]">{t}</h3>
+                    <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{d}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
