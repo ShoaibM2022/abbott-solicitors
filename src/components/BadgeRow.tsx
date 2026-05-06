@@ -54,7 +54,7 @@ export default function BadgeRow({ badges, height = 56 }: { badges: Badge[]; hei
           target="_blank"
           rel="noopener noreferrer"
           aria-label={alt}
-          className="badge-item"
+          className="badge-item bg-white px-5 py-3 rounded flex items-center justify-center hover:brightness-105 transition-[filter] duration-200"
         >
           <Image
             src={src}

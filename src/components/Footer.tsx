@@ -209,7 +209,7 @@ export default function Footer() {
           <p className="text-[#8A8A94]/50 text-[10px] tracking-[0.32em] uppercase font-sans mb-6">
             Accreditations &amp; Memberships
           </p>
-          <BadgeRow badges={badges} height={44} />
+          <BadgeRow badges={badges} height={52} />
         </div>
 
         {/* Bottom bar */}
