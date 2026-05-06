@@ -63,7 +63,7 @@ export default function Hero() {
         </div>
 
         {/* Subtext */}
-        <p className="hero-sub text-[#8A8A94] text-sm sm:text-[15px] leading-[1.85] max-w-[440px] font-sans mb-8 sm:mb-10">
+        <p className="hero-sub text-[#8A8A94] text-base sm:text-lg leading-[1.85] max-w-[440px] font-sans mb-8 sm:mb-10">
           Trusted solicitors providing specialist legal services across the UK.
           Immigration, Family, Housing, Employment and more — with a free initial
           consultation available.

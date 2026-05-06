@@ -12,14 +12,14 @@ export default function ContactForm() {
         <div key={id} className="flex flex-col gap-1.5">
           <label htmlFor={id} className="text-[#8A8A94] text-[10px] tracking-[0.25em] uppercase font-sans">{label}</label>
           <input id={id} type={type} placeholder={placeholder}
-            className="bg-transparent border border-[#C9A84C]/20 px-4 py-3 text-[#F0EDE6] text-sm font-sans placeholder:text-[#8A8A94]/50
+            className="bg-transparent border border-[#C9A84C]/20 px-4 py-3 text-[#F0EDE6] text-base font-sans placeholder:text-[#8A8A94]/50
                        focus:outline-none focus:border-[#C9A84C]/60 transition-colors duration-200" />
         </div>
       ))}
       <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="text-[#8A8A94] text-[10px] tracking-[0.25em] uppercase font-sans">How Can We Help?</label>
         <textarea id="message" rows={5} placeholder="Briefly describe your legal matter..."
-          className="bg-transparent border border-[#C9A84C]/20 px-4 py-3 text-[#F0EDE6] text-sm font-sans placeholder:text-[#8A8A94]/50
+          className="bg-transparent border border-[#C9A84C]/20 px-4 py-3 text-[#F0EDE6] text-base font-sans placeholder:text-[#8A8A94]/50
                      focus:outline-none focus:border-[#C9A84C]/60 transition-colors duration-200 resize-none" />
       </div>
       <button type="submit"

@@ -35,7 +35,7 @@ export default function CTASection() {
           <em className="italic text-[#C9A84C]">We&apos;re Here to Help.</em>
         </h2>
 
-        <p className="text-[#8A8A94] text-sm sm:text-[15px] leading-relaxed max-w-xl font-sans">
+        <p className="text-[#8A8A94] text-base sm:text-lg leading-relaxed max-w-xl font-sans">
           Book a free initial consultation with one of our specialist solicitors.
           Available in person at our Luton or Birmingham offices, or virtually
           anywhere in the UK.
@@ -72,7 +72,7 @@ export default function CTASection() {
           ].map(({ city, addr }) => (
             <div key={city} className="flex flex-col items-center gap-1 text-center">
               <span className="text-[#C9A84C] text-[10px] tracking-[0.28em] uppercase font-sans">{city}</span>
-              <span className="text-[#8A8A94] text-sm font-sans">{addr}</span>
+              <span className="text-[#8A8A94] text-base font-sans">{addr}</span>
             </div>
           ))}
         </div>

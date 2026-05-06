@@ -35,7 +35,7 @@ export default function StatsBar() {
               ${i < 2 ? "border-b md:border-b-0 border-[#C9A84C]/10" : ""}
               md:border-r md:last:border-r-0`}
           >
-            <span className="serif text-3xl md:text-4xl text-[#C9A84C] font-light tracking-wide">
+            <span className="serif text-4xl md:text-5xl text-[#C9A84C] font-light tracking-wide">
               {value}
             </span>
             <span className="text-[#8A8A94] text-[10px] tracking-[0.26em] uppercase font-sans text-center">

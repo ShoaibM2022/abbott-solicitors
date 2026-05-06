@@ -34,14 +34,14 @@ export default function ComplaintsPage() {
               <div key={step} className={`flex gap-6 wicked-slideRight wicked-delay-${i + 1}`}>
                 <div className="shrink-0 flex flex-col items-center gap-2">
                   <div className="w-10 h-10 border border-[#C9A84C]/40 flex items-center justify-center">
-                    <span className="serif text-lg text-[#C9A84C]">{i + 1}</span>
+                    <span className="serif text-xl text-[#C9A84C]">{i + 1}</span>
                   </div>
                   {i < 4 && <div className="w-px flex-1 bg-[#C9A84C]/12" />}
                 </div>
                 <div className="pb-8 flex flex-col gap-2">
                   <span className="text-[#C9A84C] text-[10px] tracking-[0.25em] uppercase font-sans">{step}</span>
-                  <h3 className="serif text-xl text-[#F0EDE6]">{title}</h3>
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{body}</p>
+                  <h3 className="serif text-2xl text-[#F0EDE6]">{title}</h3>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{body}</p>
                 </div>
               </div>
             ))}

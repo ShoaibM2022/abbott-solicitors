@@ -94,15 +94,15 @@ export default function PrivacyPolicyPage() {
           <div className="max-w-3xl mx-auto flex flex-col gap-10">
             {sections.map(({ title, body }) => (
               <div key={title} className="wicked-fadeIn flex flex-col gap-3">
-                <h2 className="serif text-xl text-[#F0EDE6] font-light">{title}</h2>
+                <h2 className="serif text-2xl text-[#F0EDE6] font-light">{title}</h2>
                 <div className="w-8 h-px bg-[#C9A84C]/30" />
-                <p className="text-[#8A8A94] text-sm font-sans leading-relaxed whitespace-pre-line">{body}</p>
+                <p className="text-[#8A8A94] text-base font-sans leading-relaxed whitespace-pre-line">{body}</p>
               </div>
             ))}
 
             <div className="border border-[#C9A84C]/20 p-6 flex flex-col gap-2 mt-4">
               <span className="text-[#C9A84C] text-[10px] tracking-[0.25em] uppercase font-sans">Contact Our Data Protection Lead</span>
-              <p className="text-[#8A8A94] text-sm font-sans leading-relaxed">
+              <p className="text-[#8A8A94] text-base font-sans leading-relaxed">
                 Abbott Solicitors, Abbott House, Unit 9, 729 Capability Green, Luton, Bedfordshire LU1 3LU<br />
                 Email: <a href="mailto:info@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">info@abbottsolicitors.com</a><br />
                 Tel: <a href="tel:+441582737952" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">+44 (0) 1582 737952</a>

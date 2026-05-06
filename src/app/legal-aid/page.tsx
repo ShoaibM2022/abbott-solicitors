@@ -59,7 +59,7 @@ export default function LegalAidPage() {
               <h2 className="serif text-[clamp(1.8rem,4vw,3rem)] text-[#F0EDE6] font-light leading-tight">
                 Do You <em className="italic text-[#C9A84C]">Qualify?</em>
               </h2>
-              <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">You may be eligible for Legal Aid if:</p>
+              <p className="text-[#8A8A94] text-base leading-relaxed font-sans">You may be eligible for Legal Aid if:</p>
               <div className="flex flex-col gap-3">
                 {eligibility.map((point, i) => (
                   <div key={i} className={`flex items-start gap-3 wicked-slideRight wicked-delay-${i + 1}`}>
@@ -68,7 +68,7 @@ export default function LegalAidPage() {
                         <path d="M1 4l3 3 5-6" stroke="#C9A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </div>
-                    <span className="text-[#8A8A94] text-sm leading-relaxed font-sans">{point}</span>
+                    <span className="text-[#8A8A94] text-base leading-relaxed font-sans">{point}</span>
                   </div>
                 ))}
               </div>
@@ -87,10 +87,10 @@ export default function LegalAidPage() {
               {areas.map(({ title, desc }, i) => (
                 <div key={title} className={`glass-card p-7 flex flex-col gap-4 wicked-slideUp wicked-delay-${i + 1}`}>
                   <div className="wicked-floater w-12 h-12 border border-[#C9A84C]/30 flex items-center justify-center">
-                    <span className="serif text-2xl text-[#C9A84C]">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="serif text-3xl text-[#C9A84C]">{String(i + 1).padStart(2, "0")}</span>
                   </div>
-                  <h3 className="serif text-xl text-[#E8C97A]">{title}</h3>
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{desc}</p>
+                  <h3 className="serif text-2xl text-[#E8C97A]">{title}</h3>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </div>
               ))}
             </div>
@@ -110,8 +110,8 @@ export default function LegalAidPage() {
               ].map(({ n, t, d }) => (
                 <div key={n} className="wicked-fadeIn flex flex-col gap-4">
                   <span className="serif text-5xl text-[#C9A84C]/20 font-light">{n}</span>
-                  <h3 className="serif text-xl text-[#F0EDE6]">{t}</h3>
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{d}</p>
+                  <h3 className="serif text-2xl text-[#F0EDE6]">{t}</h3>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{d}</p>
                 </div>
               ))}
             </div>

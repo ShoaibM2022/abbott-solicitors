@@ -49,7 +49,7 @@ const junior = [
 function MemberCard({ name, role, initial, gold = false }: { name: string; role: string; initial: string; gold?: boolean }) {
   return (
     <div className="glass-card wicked-slideUp p-6 flex flex-col gap-4 group">
-      <div className={`w-14 h-14 flex items-center justify-center text-sm tracking-widest font-sans font-medium
+      <div className={`w-14 h-14 flex items-center justify-center text-base tracking-widest font-sans font-medium
         ${gold ? "bg-[#C9A84C] text-[#0A0B0F]" : "border border-[#C9A84C]/30 text-[#C9A84C]"}`}>
         {initial}
       </div>

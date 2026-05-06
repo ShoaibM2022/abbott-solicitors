@@ -57,7 +57,7 @@ export default function AboutPage() {
               <div className="flex flex-wrap gap-6 pt-2">
                 {[["2012", "Founded"], ["18", "Team Members"], ["2", "UK Offices"], ["500+", "Cases Won"]].map(([val, lbl]) => (
                   <div key={lbl} className="flex flex-col gap-1">
-                    <span className="serif text-3xl text-[#C9A84C] font-light">{val}</span>
+                    <span className="serif text-4xl text-[#C9A84C] font-light">{val}</span>
                     <span className="text-[#8A8A94] text-[10px] tracking-[0.25em] uppercase font-sans">{lbl}</span>
                   </div>
                 ))}
@@ -88,11 +88,11 @@ export default function AboutPage() {
                 <div key={title}
                   className={`glass-card p-7 flex flex-col gap-4 wicked-slideUp wicked-delay-${i + 1}`}>
                   <div className="w-10 h-10 border border-[#C9A84C]/30 flex items-center justify-center">
-                    <span className="serif text-lg text-[#C9A84C]">{i + 1}</span>
+                    <span className="serif text-xl text-[#C9A84C]">{i + 1}</span>
                   </div>
-                  <h3 className="serif text-xl text-[#F0EDE6]">{title}</h3>
+                  <h3 className="serif text-2xl text-[#F0EDE6]">{title}</h3>
                   <div className="w-8 h-px bg-[#C9A84C]/30" />
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{desc}</p>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </div>
               ))}
             </div>

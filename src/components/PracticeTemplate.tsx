@@ -114,9 +114,9 @@ export default function PracticeTemplate({
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {services.map(({ title: t, desc }, i) => (
                 <TiltCard key={t} delay={i * 90} className="p-7 flex flex-col gap-4">
-                  <h3 className="serif text-lg text-[#E8C97A]">{t}</h3>
+                  <h3 className="serif text-xl text-[#E8C97A]">{t}</h3>
                   <div className="w-8 h-px bg-[#C9A84C]/30" />
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{desc}</p>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </TiltCard>
               ))}
             </div>
@@ -148,8 +148,8 @@ export default function PracticeTemplate({
                     {/* inner gold fill on hover */}
                     <span className="absolute inset-0 bg-[#C9A84C]/0 group-hover:bg-[#C9A84C]/10 transition-colors duration-300" />
                   </div>
-                  <h3 className="serif text-lg text-[#F0EDE6]">{t}</h3>
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{desc}</p>
+                  <h3 className="serif text-xl text-[#F0EDE6]">{t}</h3>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </RevealItem>
               ))}
             </div>
@@ -174,7 +174,7 @@ export default function PracticeTemplate({
                     <circle cx="9" cy="9" r="8" stroke="currentColor" strokeWidth="1"/>
                     <path d="M5 9l3 3 5-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <span className="text-[#8A8A94] text-sm leading-relaxed font-sans">{point}</span>
+                  <span className="text-[#8A8A94] text-base leading-relaxed font-sans">{point}</span>
                 </RevealItem>
               ))}
             </div>

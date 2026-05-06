@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
               </blockquote>
               <div className="flex flex-col items-center gap-1">
                 <div className="w-10 h-px bg-[#C9A84C] mb-3" />
-                <span className="text-[#C9A84C] serif text-lg">{t.name}</span>
+                <span className="text-[#C9A84C] serif text-xl">{t.name}</span>
                 <span className="text-[#8A8A94] text-[11px] tracking-[0.18em] uppercase font-sans">{t.matter}</span>
               </div>
             </div>

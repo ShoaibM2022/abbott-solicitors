@@ -86,7 +86,7 @@ export default function HomeOfficeDisbursementsPage() {
 
             <div className="wicked-fadeIn border border-[#C9A84C]/20 p-6 flex flex-col gap-2">
               <span className="text-[#C9A84C] text-[10px] tracking-[0.25em] uppercase font-sans">Important Notice</span>
-              <p className="text-[#8A8A94] text-sm font-sans leading-relaxed">
+              <p className="text-[#8A8A94] text-base font-sans leading-relaxed">
                 Home Office fees are set by the UK Government and are subject to change. The figures below reflect published UKVI fees as of 2025. Always confirm the current fee at{" "}
                 <a
                   href="https://www.gov.uk/government/publications/visa-regulations-revised-table"
@@ -102,13 +102,13 @@ export default function HomeOfficeDisbursementsPage() {
 
             {feeGroups.map(({ heading, items }) => (
               <div key={heading} className="wicked-slideUp flex flex-col gap-4">
-                <h2 className="serif text-2xl text-[#F0EDE6] font-light">{heading}</h2>
+                <h2 className="serif text-3xl text-[#F0EDE6] font-light">{heading}</h2>
                 <div className="w-10 h-px bg-[#C9A84C]/30" />
                 <div className="flex flex-col divide-y divide-[#C9A84C]/10">
                   {items.map(({ label, fee }) => (
                     <div key={label} className="flex items-center justify-between py-3">
-                      <span className="text-[#8A8A94] text-sm font-sans pr-4">{label}</span>
-                      <span className="text-[#C9A84C] text-sm font-sans font-semibold whitespace-nowrap">{fee}</span>
+                      <span className="text-[#8A8A94] text-base font-sans pr-4">{label}</span>
+                      <span className="text-[#C9A84C] text-base font-sans font-semibold whitespace-nowrap">{fee}</span>
                     </div>
                   ))}
                 </div>
@@ -116,12 +116,12 @@ export default function HomeOfficeDisbursementsPage() {
             ))}
 
             <div className="wicked-fadeIn flex flex-col gap-4 pt-4">
-              <h2 className="serif text-2xl text-[#F0EDE6] font-light">Immigration Health Surcharge</h2>
+              <h2 className="serif text-3xl text-[#F0EDE6] font-light">Immigration Health Surcharge</h2>
               <div className="w-10 h-px bg-[#C9A84C]/30" />
-              <p className="text-[#8A8A94] text-sm font-sans leading-relaxed">
+              <p className="text-[#8A8A94] text-base font-sans leading-relaxed">
                 Most applicants for leave to remain in the UK must also pay the Immigration Health Surcharge (IHS), which grants access to the NHS during your stay. As of 2024, the surcharge is <strong className="text-[#F0EDE6]">£1,035 per year</strong> for adults and <strong className="text-[#F0EDE6]">£776 per year</strong> for children and students. The total IHS is calculated based on the length of leave being granted.
               </p>
-              <p className="text-[#8A8A94] text-sm font-sans leading-relaxed">
+              <p className="text-[#8A8A94] text-base font-sans leading-relaxed">
                 The IHS must be paid online at{" "}
                 <a
                   href="https://www.gov.uk/healthcare-immigration-application"

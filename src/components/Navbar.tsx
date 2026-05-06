@@ -149,7 +149,7 @@ export default function Navbar() {
         <div className="px-6 py-6 flex flex-col gap-2">
 
           {/* About accordion */}
-          <button onClick={() => toggleMobile("about")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-sm tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
+          <button onClick={() => toggleMobile("about")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-base tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
             About
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform ${mobileSection === "about" ? "rotate-180" : ""}`}>
               <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
@@ -159,7 +159,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {aboutLinks.map(({ label, href }) => (
                 <Link key={href} href={href} onClick={() => setMenuOpen(false)}
-                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-xs tracking-[0.15em] uppercase font-sans">
+                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-sm tracking-[0.15em] uppercase font-sans">
                   {label}
                 </Link>
               ))}
@@ -167,7 +167,7 @@ export default function Navbar() {
           )}
 
           {/* Practices accordion */}
-          <button onClick={() => toggleMobile("practices")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-sm tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
+          <button onClick={() => toggleMobile("practices")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-base tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
             Practices
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform ${mobileSection === "practices" ? "rotate-180" : ""}`}>
               <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
@@ -177,7 +177,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {practices.map(({ label, href }) => (
                 <Link key={href} href={href} onClick={() => setMenuOpen(false)}
-                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-xs tracking-[0.15em] uppercase font-sans">
+                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-sm tracking-[0.15em] uppercase font-sans">
                   {label}
                 </Link>
               ))}
@@ -185,12 +185,12 @@ export default function Navbar() {
           )}
 
           <Link href="/legal-aid" onClick={() => setMenuOpen(false)}
-            className="py-3 text-[#8A8A94] text-sm tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
+            className="py-3 text-[#8A8A94] text-base tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
             Legal Aid
           </Link>
 
           {/* Fees accordion */}
-          <button onClick={() => toggleMobile("fees")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-sm tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
+          <button onClick={() => toggleMobile("fees")} className="flex items-center justify-between w-full py-3 text-[#8A8A94] text-base tracking-[0.18em] uppercase font-sans border-b border-[#C9A84C]/10">
             Fees
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className={`transition-transform ${mobileSection === "fees" ? "rotate-180" : ""}`}>
               <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
@@ -200,7 +200,7 @@ export default function Navbar() {
             <div className="flex flex-col gap-1 pl-4 mb-2">
               {feeLinks.map(({ label, href }) => (
                 <Link key={href} href={href} onClick={() => setMenuOpen(false)}
-                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-xs tracking-[0.15em] uppercase font-sans">
+                  className="py-2 text-[#8A8A94] hover:text-[#F0EDE6] text-sm tracking-[0.15em] uppercase font-sans">
                   {label}
                 </Link>
               ))}

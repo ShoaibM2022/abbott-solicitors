@@ -20,7 +20,7 @@ export default function PageCTA({
         <h2 className="serif text-[clamp(2rem,5vw,3.5rem)] text-[#F0EDE6] font-light leading-tight">
           {heading}
         </h2>
-        <p className="text-[#8A8A94] text-sm sm:text-[15px] leading-relaxed font-sans max-w-xl">{subtext}</p>
+        <p className="text-[#8A8A94] text-base sm:text-lg leading-relaxed font-sans max-w-xl">{subtext}</p>
         <div className="flex flex-col sm:flex-row gap-3 mt-2">
           <Link href="/contact"
             className="wicked-pulse inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#C9A84C] text-[#0A0B0F] text-[11px] tracking-[0.22em] uppercase font-sans font-semibold hover:bg-[#E8C97A] transition-colors duration-300">

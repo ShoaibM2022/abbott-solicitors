@@ -91,7 +91,7 @@ export default function FeesPage() {
               Hourly Rate Structure
             </h2>
             <div className="wicked-slideUp overflow-x-auto">
-              <table className="w-full text-sm font-sans border-collapse">
+              <table className="w-full text-base font-sans border-collapse">
                 <thead>
                   <tr className="border-b border-[#C9A84C]/20">
                     <th className="text-left py-4 pr-6 text-[#C9A84C] text-[10px] tracking-[0.25em] uppercase font-normal">Grade</th>
@@ -130,7 +130,7 @@ export default function FeesPage() {
                 {items.map(({ type, range }) => (
                   <div key={type} className="glass-card wicked-fadeIn p-5 flex flex-col gap-2">
                     <span className="text-[#8A8A94] text-[12px] font-sans leading-snug">{type}</span>
-                    <span className="serif text-xl text-[#C9A84C]">{range}</span>
+                    <span className="serif text-2xl text-[#C9A84C]">{range}</span>
                   </div>
                 ))}
               </div>
@@ -141,7 +141,7 @@ export default function FeesPage() {
         {/* VAT notice */}
         <section className="py-12 px-4 sm:px-6 lg:px-10 bg-[#0D1B35]/30">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">
+            <p className="text-[#8A8A94] text-base leading-relaxed font-sans">
               All fees are subject to annual review and may vary based on the complexity of individual matters.
               Personalised quotes are available upon request. VAT at 20% applies to all legal fees.
               Legal Aid may be available in certain matters — please enquire.

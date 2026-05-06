@@ -128,7 +128,7 @@ export default function Footer() {
                 className="logo-filter h-9 w-auto object-contain"
               />
             </Link>
-            <p className="text-[#8A8A94] text-sm leading-relaxed max-w-[240px] font-sans">
+            <p className="text-[#8A8A94] text-base leading-relaxed max-w-[240px] font-sans">
               Trusted legal expertise across the UK since 2012. Authorised and
               regulated by the Solicitors Regulation Authority.
             </p>
@@ -158,7 +158,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {practiceLinks.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-[#8A8A94] text-sm hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
+                  <Link href={href} className="text-[#8A8A94] text-base hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
                     {label}
                   </Link>
                 </li>
@@ -174,7 +174,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {quickLinks.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-[#8A8A94] text-sm hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
+                  <Link href={href} className="text-[#8A8A94] text-base hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
                     {label}
                   </Link>
                 </li>
@@ -190,11 +190,11 @@ export default function Footer() {
             <div className="flex flex-col gap-6">
               {offices.map(({ city, addr, tel }) => (
                 <div key={city} className="flex flex-col gap-1">
-                  <span className="text-[#F0EDE6] text-sm serif">{city}</span>
-                  <span className="text-[#8A8A94] text-xs leading-relaxed font-sans whitespace-pre-line">{addr}</span>
+                  <span className="text-[#F0EDE6] text-base serif">{city}</span>
+                  <span className="text-[#8A8A94] text-sm leading-relaxed font-sans whitespace-pre-line">{addr}</span>
                   <a
                     href={`tel:${tel.replace(/[\s()]/g, "")}`}
-                    className="text-[#C9A84C] text-xs hover:text-[#E8C97A] transition-colors font-sans mt-0.5"
+                    className="text-[#C9A84C] text-sm hover:text-[#E8C97A] transition-colors font-sans mt-0.5"
                   >
                     {tel}
                   </a>
@@ -214,7 +214,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-[#C9A84C]/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#8A8A94] text-xs font-sans">
+          <p className="text-[#8A8A94] text-sm font-sans">
             © {new Date().getFullYear()} Abbott Solicitors. All rights reserved.
             Authorised and regulated by the Solicitors Regulation Authority.
           </p>

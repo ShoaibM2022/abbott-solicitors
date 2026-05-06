@@ -58,14 +58,14 @@ export default function ContactPage() {
               <span className="text-[#C9A84C] text-[10px] tracking-[0.38em] uppercase font-sans">Our Offices</span>
               {offices.map(({ city, address, tel, fax, mobile }) => (
                 <div key={city} className="glass-card p-7 flex flex-col gap-4">
-                  <h3 className="serif text-2xl text-[#F0EDE6]">{city} Office</h3>
+                  <h3 className="serif text-3xl text-[#F0EDE6]">{city} Office</h3>
                   <div className="w-10 h-px bg-[#C9A84C]/30" />
-                  <p className="text-[#8A8A94] text-sm font-sans leading-relaxed whitespace-pre-line">{address}</p>
+                  <p className="text-[#8A8A94] text-base font-sans leading-relaxed whitespace-pre-line">{address}</p>
                   <div className="flex flex-col gap-2 pt-2">
                     {[{ lbl: "Tel", val: tel }, { lbl: "Fax", val: fax }, { lbl: "Mobile / WhatsApp", val: mobile }].map(({ lbl, val }) => (
                       <div key={lbl} className="flex items-center gap-3">
                         <span className="text-[#C9A84C] text-[10px] tracking-[0.2em] uppercase font-sans w-28">{lbl}</span>
-                        <a href={`tel:${val.replace(/\s/g,"")}`} className="text-[#F0EDE6]/80 text-sm font-sans hover:text-[#C9A84C] transition-colors">{val}</a>
+                        <a href={`tel:${val.replace(/\s/g,"")}`} className="text-[#F0EDE6]/80 text-base font-sans hover:text-[#C9A84C] transition-colors">{val}</a>
                       </div>
                     ))}
                   </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
               {/* Free consultation note */}
               <div className="border border-[#C9A84C]/20 p-5 flex flex-col gap-2">
                 <span className="text-[#C9A84C] text-[10px] tracking-[0.25em] uppercase font-sans">Free Initial Consultation</span>
-                <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">
+                <p className="text-[#8A8A94] text-base leading-relaxed font-sans">
                   We offer a free 15-minute initial consultation for Immigration, Personal Injury, Family Law, Housing Law, Employment and Civil Litigation matters.
                 </p>
               </div>

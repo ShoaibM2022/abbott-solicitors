@@ -49,10 +49,10 @@ export default function CareersPage() {
               {reasons.map(({ title, desc }, i) => (
                 <div key={title} className={`glass-card p-7 flex flex-col gap-4 wicked-slideUp wicked-delay-${i + 1}`}>
                   <div className="wicked-rotateIn w-10 h-10 border border-[#C9A84C]/30 flex items-center justify-center">
-                    <span className="serif text-lg text-[#C9A84C]">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="serif text-xl text-[#C9A84C]">{String(i + 1).padStart(2, "0")}</span>
                   </div>
-                  <h3 className="serif text-xl text-[#E8C97A]">{title}</h3>
-                  <p className="text-[#8A8A94] text-sm leading-relaxed font-sans">{desc}</p>
+                  <h3 className="serif text-2xl text-[#E8C97A]">{title}</h3>
+                  <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </div>
               ))}
             </div>
@@ -70,7 +70,7 @@ export default function CareersPage() {
               {roles.map(({ title, type, location }, i) => (
                 <div key={title} className={`flex flex-col sm:flex-row sm:items-center justify-between gap-4 border border-[#C9A84C]/12 px-6 py-5 hover:border-[#C9A84C]/35 hover:bg-[#C9A84C]/4 transition-all duration-300 wicked-slideRight wicked-delay-${i + 1}`}>
                   <div className="flex flex-col gap-1">
-                    <h3 className="serif text-lg text-[#F0EDE6]">{title}</h3>
+                    <h3 className="serif text-xl text-[#F0EDE6]">{title}</h3>
                     <div className="flex flex-wrap gap-4">
                       <span className="text-[#8A8A94] text-[11px] tracking-[0.15em] uppercase font-sans">{type}</span>
                       <span className="text-[#8A8A94] text-[11px] tracking-[0.15em] uppercase font-sans">📍 {location}</span>
@@ -84,7 +84,7 @@ export default function CareersPage() {
               ))}
             </div>
 
-            <p className="text-[#8A8A94] text-sm font-sans mt-8">
+            <p className="text-[#8A8A94] text-base font-sans mt-8">
               Don&apos;t see a suitable role? Send a speculative CV to{" "}
               <a href="mailto:careers@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">
                 careers@abbottsolicitors.com

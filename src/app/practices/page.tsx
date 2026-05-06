@@ -137,9 +137,9 @@ export default function PracticesPage() {
                     </div>
                     <div>
                       <span className="text-[#C9A84C] text-[10px] tracking-[0.3em] uppercase font-sans">{overline}</span>
-                      <h2 className="serif text-xl text-[#F0EDE6] font-light mt-1">{title}</h2>
+                      <h2 className="serif text-2xl text-[#F0EDE6] font-light mt-1">{title}</h2>
                     </div>
-                    <p className="text-[#8A8A94] text-sm font-sans leading-relaxed flex-1">{desc}</p>
+                    <p className="text-[#8A8A94] text-base font-sans leading-relaxed flex-1">{desc}</p>
                     <span className="text-[#C9A84C] text-[11px] tracking-[0.2em] uppercase font-sans flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
                       Learn More
                       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" width="12" height="12">
