@@ -141,11 +141,6 @@ export default function ServicesSection() {
           {services.map(({ href, num, title, desc, icon }, i) => (
             <TiltCard key={href} delay={i * 75} className="p-6">
               <Link href={href} className="flex flex-col gap-4 h-full group">
-                {/* Index */}
-                <span className="text-[#C9A84C]/35 text-[10px] tracking-[0.3em] uppercase font-sans">
-                  {num}
-                </span>
-
                 {/* Icon */}
                 <div className="w-6 h-6 text-[#C9A84C]/65 group-hover:text-[#C9A84C] transition-colors duration-300">
                   {icon}
