@@ -23,6 +23,7 @@ interface PracticeTemplateProps {
   whyUs: string[];
   legalAid?: boolean;
   icon: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 /* Single item that reveals when it enters the viewport */
@@ -62,7 +63,7 @@ function RevealItem({
 
 export default function PracticeTemplate({
   overline, title, titleAccent, subtitle, intro,
-  services, process, whyUs, legalAid, icon,
+  services, process, whyUs, legalAid, icon, children,
 }: PracticeTemplateProps) {
   const introRef = useWicked("wicked-slideRight");
   const iconRef  = useWicked("wicked-floater" as never);
@@ -122,6 +123,8 @@ export default function PracticeTemplate({
             </div>
           </div>
         </section>
+
+        {children}
 
         {/* ── Process ── */}
         <section className="py-16 lg:py-24 px-4 sm:px-6 lg:px-10 bg-[#0A0B0F]">
