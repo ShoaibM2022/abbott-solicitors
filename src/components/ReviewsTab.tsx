@@ -1,23 +1,35 @@
-import Script from 'next/script'
+'use client'
+
+import { useEffect } from 'react'
 
 export default function ReviewsTab() {
-  return (
-    <>
-      <div id="rswidget_6jga6" />
-      <Script id="rs-widget-init" strategy="afterInteractive">{`
-        var rsWidgetUrlsideNew = 'https://www.reviewsolicitors.co.uk/widget/';
-        var rsEndpointUrlsideNew = 'https://www.reviewsolicitors.co.uk/';
-        var rsElementIdsideNew = 'rswidget_6jga6';
-        var rsWidgetNamesideNew = 'sideNew';
-        var rsFirmIdsideNew = 9742;
-        var rsPropssideNew = {"google":true,"defaultposition":true,"isClick":false,"stats":["satisfaction","wouldRecommend","valueForMoney","approachability","legalKnowledge"],"widgetStyle":2,"mr":4};
-        (function(){
-          var s = document.createElement('script');
-          s.src = 'https://www.reviewsolicitors.co.uk/widget/rs-widget-sideNew.js';
-          s.defer = true;
-          document.head.appendChild(s);
-        })();
-      `}</Script>
-    </>
-  )
+  useEffect(() => {
+    // Set required globals before the widget script reads them
+    ;(window as unknown as Record<string, unknown>).rsWidgetUrlsideNew =
+      'https://www.reviewsolicitors.co.uk/widget/'
+    ;(window as unknown as Record<string, unknown>).rsEndpointUrlsideNew =
+      'https://www.reviewsolicitors.co.uk/'
+    ;(window as unknown as Record<string, unknown>).rsElementIdsideNew = 'rswidget_6jga6'
+    ;(window as unknown as Record<string, unknown>).rsWidgetNamesideNew = 'sideNew'
+    ;(window as unknown as Record<string, unknown>).rsFirmIdsideNew = 9742
+    ;(window as unknown as Record<string, unknown>).rsPropssideNew = {
+      google: true,
+      defaultposition: true,
+      isClick: false,
+      stats: ['satisfaction', 'wouldRecommend', 'valueForMoney', 'approachability', 'legalKnowledge'],
+      widgetStyle: 2,
+      mr: 4,
+    }
+
+    const script = document.createElement('script')
+    script.src = 'https://www.reviewsolicitors.co.uk/widget/rs-widget-sideNew.js'
+    script.defer = true
+    document.head.appendChild(script)
+
+    return () => {
+      document.head.removeChild(script)
+    }
+  }, [])
+
+  return <div id="rswidget_6jga6" />
 }
