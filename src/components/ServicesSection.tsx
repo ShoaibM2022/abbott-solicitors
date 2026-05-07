@@ -11,9 +11,9 @@ const services = [
     title: "Immigration Law",
     desc: "Visas, indefinite leave to remain, asylum claims and nationality applications.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <circle cx="24" cy="24" r="20"/>
+        <path d="M4 24h40M24 4a32 32 0 010 40M24 4a32 32 0 000 40"/>
       </svg>
     ),
   },
@@ -23,10 +23,11 @@ const services = [
     title: "Family Law",
     desc: "Divorce, child arrangements, financial settlements and domestic matters.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-        <circle cx="9" cy="7" r="4"/>
-        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <circle cx="16" cy="14" r="6"/>
+        <circle cx="32" cy="14" r="6"/>
+        <path d="M4 42c0-7 5-12 12-12M32 30c7 0 12 5 12 12"/>
+        <circle cx="24" cy="34" r="6"/>
       </svg>
     ),
   },
@@ -36,9 +37,9 @@ const services = [
     title: "Housing Law",
     desc: "Eviction defence, disrepair claims and unlawful eviction proceedings.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-        <polyline points="9 22 9 12 15 12 15 22"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <path d="M6 22L24 6l18 16v20H6z"/>
+        <rect x="17" y="30" width="14" height="12" rx="1"/>
       </svg>
     ),
   },
@@ -48,9 +49,12 @@ const services = [
     title: "Property Law & Conveyancing",
     desc: "Residential and commercial conveyancing, lease extensions, title disputes and property development.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="7.5" cy="15.5" r="5.5"/>
-        <path d="M21 2l-9.6 9.6M15.5 7.5l3 3L21 8l-3-3"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <path d="M6 22L24 6l18 16v20a2 2 0 01-2 2H8a2 2 0 01-2-2V22z"/>
+        <rect x="18" y="28" width="12" height="14" rx="1"/>
+        <circle cx="38" cy="14" r="5"/>
+        <path d="M33 14H20"/>
+        <path d="M24 14v4M28 14v3"/>
       </svg>
     ),
   },
@@ -60,8 +64,11 @@ const services = [
     title: "Personal Injury Claims",
     desc: "Road traffic accidents, workplace injuries, medical negligence and serious injury claims on a no win, no fee basis.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 12h4l2-7 4 14 2-7h4"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <rect x="4" y="6" width="40" height="28" rx="2"/>
+        <path d="M8 20h7l3-9 5 18 3-9h10" strokeWidth="1.4"/>
+        <path d="M24 34v7"/>
+        <path d="M15 41h18"/>
       </svg>
     ),
   },
@@ -71,9 +78,9 @@ const services = [
     title: "Employment Law",
     desc: "Unfair dismissal, discrimination, settlement agreements, TUPE, whistleblowing and Employment Tribunal claims.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="7" width="20" height="14" rx="2"/>
-        <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M12 12v4M8 12h8"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <rect x="4" y="16" width="40" height="26" rx="3"/>
+        <path d="M16 16v-4a8 8 0 0116 0v4M24 28v6M20 28h8"/>
       </svg>
     ),
   },
@@ -83,12 +90,16 @@ const services = [
     title: "Civil Disputes",
     desc: "County Court and High Court claims, debt recovery, contract disputes, professional negligence and injunctions.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 3v18M8 21h8"/>
-        <path d="M5 7h14"/>
-        <path d="M5 7v6M19 7v6"/>
-        <path d="M2 13a3 3 0 0 0 6 0"/>
-        <path d="M16 13a3 3 0 0 0 6 0"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <path d="M24 8v32"/>
+        <path d="M15 40h18"/>
+        <path d="M6 13h36"/>
+        <path d="M6 13v9"/>
+        <path d="M2 22h8"/>
+        <path d="M2 22q4 6 8 0"/>
+        <path d="M42 13v9"/>
+        <path d="M38 22h8"/>
+        <path d="M38 22q4 6 8 0"/>
       </svg>
     ),
   },
@@ -98,9 +109,9 @@ const services = [
     title: "Criminal Defence",
     desc: "Expert representation from police station to Crown Court. Available 24/7.",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <path d="M9 12l2 2 4-4"/>
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+        <path d="M24 4l18 7v11c0 12-8 20-18 22C14 42 6 34 6 22V11z"/>
+        <path d="M16 24l5 5 10-10" strokeWidth="1.5"/>
       </svg>
     ),
   },
@@ -143,18 +154,18 @@ export default function ServicesSection() {
           {services.map(({ href, num, title, desc, icon }, i) => (
             <TiltCard key={href} delay={i * 75} className="p-6">
               <Link href={href} className="flex flex-col gap-4 h-full group">
-                {/* Title */}
-                <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300">
-                  {title}
-                </h3>
-
-                {/* Separator */}
-                <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300" />
-
-                {/* Icon */}
-                <div className="w-6 h-6 text-[#C9A84C]/65 group-hover:text-[#C9A84C] transition-colors duration-300">
-                  {icon}
+                {/* Icon + title on same row, icon first */}
+                <div className="flex items-center gap-4">
+                  <div className="w-[49px] h-[49px] shrink-0 text-[#C9A84C]/65 group-hover:text-[#C9A84C] group-hover:rotate-6 transition-all duration-300">
+                    {icon}
+                  </div>
+                  <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300 flex-1">
+                    {title}
+                  </h3>
                 </div>
+
+                {/* Separator — centered under the 49px icon */}
+                <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300 ml-[8.5px]" />
 
                 {/* Description */}
                 <p className="text-[#8A8A94] text-base leading-[1.75] font-sans flex-1">{desc}</p>
