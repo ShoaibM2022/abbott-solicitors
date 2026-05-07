@@ -2,21 +2,73 @@
 
 import { useEffect, useRef, useState } from "react";
 
+// Verified 5-star client reviews sourced from ReviewSolicitors:
+// https://www.reviewsolicitors.co.uk/bedfordshire/luton/abbott-solicitors-llp
 const testimonials = [
   {
-    quote: "Abbott Solicitors handled my complex immigration case with exceptional care and professionalism. They kept me informed at every step and achieved a result beyond my expectations.",
-    name: "R. Patel",
+    quote: "I highly recommend Amna Farook for her outstanding support and professionalism. She helped me in such a short time and handled everything efficiently and with great care. Amna was always responsive, clear in her communication, and made a stressful situation much easier to deal with.",
+    name: "Attiqa Aurangzeb",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "I cannot recommend this solicitor highly enough for an ILR application. We worked with Maniha — from the very first consultation, she was professional, knowledgeable, and extremely thorough. Every step of the process was explained clearly, which gave me complete confidence and peace of mind.",
+    name: "Nazmeen Younas",
     matter: "Immigration: Indefinite Leave to Remain",
   },
   {
-    quote: "The team at Abbott navigated my housing dispute with precision and clarity. Their knowledge of UK housing law is outstanding. I felt genuinely supported throughout.",
-    name: "J. Williams",
-    matter: "Housing Law: Unlawful Eviction",
+    quote: "I cannot recommend Abbott Solicitors highly enough — if you're looking for a team that genuinely delivers results, this is the one to choose. My Home Office application was approved smoothly and efficiently, all thanks to the incredible work of Barrister Adnan and Mrs Zeemal. From start to finish, they handled everything with confidence, precision, and professionalism.",
+    name: "Ali",
+    matter: "Immigration: Home Office Application",
   },
   {
-    quote: "I was referred to Abbott Solicitors for my employment tribunal and could not be happier. Professional, thorough, and genuinely committed to justice. Highly recommended.",
-    name: "S. Okonkwo",
-    matter: "Employment Law: Unfair Dismissal",
+    quote: "I would like to express my sincere gratitude to Abbott Solicitors, especially Barrister Adnan and Mrs Zeemal, for their outstanding support and professionalism in handling my Home Office application. Thanks to their expertise and dedication, my application was successfully approved, and I couldn't be happier with the outcome. Their teamwork made what could have been a stressful experience feel smooth and manageable.",
+    name: "Sallah Sahrane",
+    matter: "Immigration: Home Office Application",
+  },
+  {
+    quote: "I had a really positive experience with Abbott Solicitors, and in particular with Asim, who handled my case. From the start, he was professional, attentive, and genuinely supportive. His attention to detail and commitment to getting everything sorted efficiently really stood out.",
+    name: "Vazma O.",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "Excellent service from start to finish. Adnan was proactive, professional, and always available to answer my questions. They made a stressful situation much more manageable. I will definitely use them again.",
+    name: "Muhammad Rehman",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "I highly recommend Abbott Solicitors LLP — they were very understanding and professional, and I got the best services from Ms Mariam Chakir and Mr Mahek Chaudhri. They really helped me throughout my case and gave me enough time. They were so gentle and generous.",
+    name: "Logman Salih",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "I got clear, honest and professional advice from Barrister Faisal Mehmood. I found him very kind and helpful.",
+    name: "Verified Client",
+    matter: "Legal Consultation",
+  },
+  {
+    quote: "I met and found Barrister Faisal Mehmood kind and helpful. The discussion was very fruitful. He has a professional team with him. I will recommend him.",
+    name: "Verified Client",
+    matter: "Legal Consultation",
+  },
+  {
+    quote: "Asim Mustafa — a brilliant solicitor, punctual, with great communication skills. The customer was amazed and very happy.",
+    name: "Gabriel Angelov",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "I will recommend Barrister Faisal Mehmood to everyone who needs any legal advice.",
+    name: "Verified Client",
+    matter: "Legal Consultation",
+  },
+  {
+    quote: "My solicitor Mahek is very good and I was happy about the outcome.",
+    name: "Elif Ayhan",
+    matter: "Verified ReviewSolicitors Client",
+  },
+  {
+    quote: "Was able to book the appointment straightaway. Great and fast service. Very helpful.",
+    name: "Karolina Szczepanik",
+    matter: "Initial Consultation",
   },
 ];
 
