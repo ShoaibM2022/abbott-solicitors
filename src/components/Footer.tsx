@@ -137,7 +137,7 @@ export default function Footer() {
                 className="logo-filter h-9 w-auto object-contain"
               />
             </Link>
-            <p className="text-[#8A8A94] text-base leading-relaxed max-w-[240px] font-sans">
+            <p className="text-[#8A8A94] text-sm leading-relaxed max-w-[240px] font-sans">
               Trusted legal expertise across the UK since 2012. Authorised and
               regulated by the Solicitors Regulation Authority.
             </p>
@@ -167,7 +167,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {practiceLinks.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-[#8A8A94] text-base hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
+                  <Link href={href} className="text-[#8A8A94] text-sm hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
                     {label}
                   </Link>
                 </li>
@@ -183,7 +183,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5">
               {quickLinks.map(({ label, href }) => (
                 <li key={label}>
-                  <Link href={href} className="text-[#8A8A94] text-base hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
+                  <Link href={href} className="text-[#8A8A94] text-sm hover:text-[#F0EDE6] transition-colors duration-200 font-sans">
                     {label}
                   </Link>
                 </li>
