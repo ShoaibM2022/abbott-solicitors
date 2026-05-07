@@ -233,6 +233,21 @@ export default function Footer() {
             <Link href="/complaints" className="hover:text-[#8A8A94] transition-colors">Complaints</Link>
           </div>
         </div>
+
+        {/* Designed & hosted credit */}
+        <div className="pt-4 flex justify-center">
+          <p className="text-[#8A8A94]/30 text-[9px] tracking-[0.2em] uppercase font-sans">
+            Designed &amp; hosted by{" "}
+            <a
+              href="https://oakress.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#C9A84C]/60 transition-colors"
+            >
+              Oakress Technology UK
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
