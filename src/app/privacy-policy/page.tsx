@@ -24,7 +24,7 @@ For the purposes of the General Data Protection Regulation (GDPR) and the Data P
 • Contact data: address, email address, telephone numbers.
 • Financial data: bank account and payment card details where required for billing.
 • Case data: details of your legal matter, correspondence, and documents you provide.
-• Technical data: IP address, browser type, pages visited, and other analytics data when you use our website.
+• Enquiry data: information you submit through our website contact form.
 • Marketing data: your preferences in receiving marketing from us.`,
   },
   {
@@ -34,7 +34,6 @@ For the purposes of the General Data Protection Regulation (GDPR) and the Data P
 • Provide legal services and advice you have instructed us to carry out.
 • Comply with our legal and regulatory obligations, including anti-money laundering checks.
 • Communicate with you about your matter, our services, and important updates.
-• Improve our website and services through anonymised analytics.
 • Send you marketing communications where you have provided consent or where we have a legitimate interest to do so.
 
 The legal bases we rely on are: performance of a contract, compliance with a legal obligation, legitimate interests, and consent (where applicable).`,
@@ -59,8 +58,12 @@ We will never sell your personal data to third parties for marketing purposes.`,
     body: <>{"Under GDPR you have the right to:\n\n• Access the personal data we hold about you.\n• Rectify inaccurate data.\n• Erase your data in certain circumstances.\n• Restrict or object to processing.\n• Data portability.\n• Withdraw consent at any time where processing is based on consent.\n\nTo exercise any of these rights, please contact us in writing at our Luton office or by email at "}<a href="mailto:info@abbottsolicitors.com" className="text-[#C9A84C] hover:text-[#E8C97A] transition-colors">info@abbottsolicitors.com</a>{"."}</>,
   },
   {
-    title: "7. Cookies",
-    body: `Our website uses essential cookies to enable core functionality. We may also use analytics cookies to understand how visitors use our site. You can control cookies through your browser settings. Blocking essential cookies may affect website functionality.`,
+    title: "7. Cookies and Third-Party Content",
+    body: `Our website does not use analytics, advertising, or tracking cookies. Only cookies strictly necessary for core functionality are set by our own domain.
+
+We embed a third-party reviews widget supplied by ReviewSolicitors. When you interact with that widget, ReviewSolicitors may set cookies on its own domain (reviewsolicitors.co.uk); please refer to ReviewSolicitors' own privacy policy for details. We have no access to data collected by them.
+
+You can control cookies at any time through your browser settings.`,
   },
   {
     title: "8. Security",

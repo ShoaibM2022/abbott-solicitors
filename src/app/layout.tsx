@@ -27,14 +27,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
-      <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          media="all"
-          href="https://www.reviewsolicitors.co.uk/assets/css/build/widgets/rs-widget-sideNew.css?v=1.0.0"
-        />
-      </head>
       <body suppressHydrationWarning>
         {children}
         <MobileFAB />
