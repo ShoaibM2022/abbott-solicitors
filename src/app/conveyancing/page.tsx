@@ -73,8 +73,16 @@ const serviceCategories = [
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
-    <circle cx="14" cy="30" r="10"/><path d="M29 15l14 14M36 12l-4-4-4 4"/>
-    <path d="M14 24v6h6" strokeWidth="1.5"/>
+    {/* House */}
+    <path d="M6 22L24 6l18 16v20a2 2 0 01-2 2H8a2 2 0 01-2-2V22z"/>
+    {/* Door */}
+    <rect x="18" y="28" width="12" height="14" rx="1"/>
+    {/* Key head */}
+    <circle cx="38" cy="14" r="5"/>
+    {/* Key shaft */}
+    <path d="M33 14H20"/>
+    {/* Key teeth */}
+    <path d="M24 14v4M28 14v3"/>
   </svg>
 );
 

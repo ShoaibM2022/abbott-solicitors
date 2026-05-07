@@ -82,7 +82,14 @@ const serviceCategories = [
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
-    <path d="M4 20h16l4-12 4 24 4-12h12"/><path d="M24 36v8M20 44h8" strokeWidth="1.2"/>
+    {/* Monitor screen */}
+    <rect x="4" y="6" width="40" height="28" rx="2"/>
+    {/* ECG / heartbeat line */}
+    <path d="M8 20h7l3-9 5 18 3-9h10" strokeWidth="1.4"/>
+    {/* Stand neck */}
+    <path d="M24 34v7"/>
+    {/* Base */}
+    <path d="M15 41h18"/>
   </svg>
 );
 

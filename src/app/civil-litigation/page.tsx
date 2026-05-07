@@ -77,8 +77,22 @@ const serviceCategories = [
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
-    <path d="M24 4v40M12 16h24M8 10l8 12M40 10l-8 12M8 38h32"/>
-    <circle cx="8" cy="10" r="3"/><circle cx="40" cy="10" r="3"/>
+    {/* Central pole */}
+    <path d="M24 8v32"/>
+    {/* Base */}
+    <path d="M15 40h18"/>
+    {/* Beam */}
+    <path d="M6 13h36"/>
+    {/* Left chain */}
+    <path d="M6 13v9"/>
+    {/* Left pan (bowl shape) */}
+    <path d="M2 22h8"/>
+    <path d="M2 22q4 6 8 0"/>
+    {/* Right chain */}
+    <path d="M42 13v9"/>
+    {/* Right pan (bowl shape) */}
+    <path d="M38 22h8"/>
+    <path d="M38 22q4 6 8 0"/>
   </svg>
 );
 
