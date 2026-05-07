@@ -8,10 +8,10 @@ const practices = [
   { label: "Immigration Law",  href: "/immigration" },
   { label: "Family Law",       href: "/family-law" },
   { label: "Housing Law",      href: "/housing-law" },
-  { label: "Conveyancing",     href: "/conveyancing" },
-  { label: "Personal Injury",  href: "/personal-injury" },
+  { label: "Property Law & Conveyancing", href: "/conveyancing" },
+  { label: "Personal Injury Claims", href: "/personal-injury" },
   { label: "Employment Law",   href: "/employment" },
-  { label: "Civil Litigation", href: "/civil-litigation" },
+  { label: "Civil Disputes",   href: "/civil-litigation" },
   { label: "Criminal Defence", href: "/criminal-defence" },
 ];
 

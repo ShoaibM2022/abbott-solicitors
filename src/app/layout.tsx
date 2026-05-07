@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Abbott Solicitors — Justice. Precision. Trust.",
   description:
-    "Expert legal solutions across the UK. Immigration, Family Law, Housing, Conveyancing, Personal Injury, Employment, Civil Litigation and Criminal Defence. Free consultation available.",
+    "Expert legal solutions across the UK. Immigration, Family Law, Housing, Property Law & Conveyancing, Personal Injury Claims, Employment, Civil Disputes and Criminal Defence. Free consultation available.",
 };
 
 export default function RootLayout({

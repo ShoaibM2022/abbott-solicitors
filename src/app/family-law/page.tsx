@@ -1,10 +1,128 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Family Law — Abbott Solicitors",
   description: "Sensitive and expert family law solicitors. Divorce, child arrangements, financial settlements and domestic abuse matters. Legal Aid available.",
 };
+
+const serviceCategories = [
+  {
+    title: "Divorce & Dissolution",
+    items: [
+      "Divorce Application (No-Fault Divorce)",
+      "Judicial Separation",
+      "Nullity of Marriage",
+      "Dissolution of Civil Partnership",
+      "Conditional Order (Decree Nisi)",
+      "Final Order (Decree Absolute)",
+      "Separation Agreement",
+    ],
+  },
+  {
+    title: "Financial Remedies & Orders",
+    items: [
+      "Financial Remedy Application",
+      "Clean Break Order",
+      "Consent Order",
+      "Property Adjustment Order",
+      "Lump Sum Order",
+      "Pension Sharing Order",
+      "Pension Attachment Order",
+      "Spousal Maintenance Order",
+      "Variation of Financial Order",
+      "Matrimonial Home Rights Registration",
+    ],
+  },
+  {
+    title: "Children — Private Law",
+    items: [
+      "Child Arrangements Order (Residence)",
+      "Child Arrangements Order (Contact)",
+      "Specific Issue Order",
+      "Prohibited Steps Order",
+      "Parental Responsibility Agreement",
+      "Parental Responsibility Order",
+      "Change of Child's Name",
+      "Relocation within the UK",
+      "International Relocation Application",
+    ],
+  },
+  {
+    title: "Children — Public Law",
+    items: [
+      "Care Proceedings (Section 31 Children Act 1989)",
+      "Emergency Protection Order (EPO)",
+      "Child Assessment Order",
+      "Supervision Order",
+      "Placement Order",
+      "Secure Accommodation Order",
+      "Public Law Outline (PLO) Representation",
+      "Kinship Care Arrangements",
+    ],
+  },
+  {
+    title: "Domestic Abuse & Protection Orders",
+    items: [
+      "Non-Molestation Order",
+      "Occupation Order",
+      "Domestic Violence Protection Order (DVPO)",
+      "Forced Marriage Protection Order",
+      "FGM Protection Order",
+      "Harassment Injunction",
+      "Undertakings & Injunctions",
+    ],
+  },
+  {
+    title: "Cohabitation & Property Disputes",
+    items: [
+      "TOLATA Claims (Trust of Land)",
+      "Beneficial Interest Claims",
+      "Declaration of Trust",
+      "Cohabitation Agreement",
+      "Property Disputes — Unmarried Couples",
+    ],
+  },
+  {
+    title: "Pre-nuptial & Relationship Agreements",
+    items: [
+      "Pre-Nuptial Agreement",
+      "Post-Nuptial Agreement",
+      "Deed of Separation",
+      "Cohabitation Agreement",
+    ],
+  },
+  {
+    title: "Adoption & Special Guardianship",
+    items: [
+      "Adoption Application",
+      "Step-Parent Adoption",
+      "Special Guardianship Order",
+      "Parental Order (Surrogacy)",
+    ],
+  },
+  {
+    title: "International Family Law",
+    items: [
+      "International Child Abduction (Hague Convention)",
+      "Mirror Orders",
+      "Overseas Divorce Recognition",
+      "International Relocation of Children",
+      "Foreign Maintenance Orders",
+    ],
+  },
+  {
+    title: "Financial Provision for Children",
+    items: [
+      "Schedule 1 Children Act 1989 Claims",
+      "Child Maintenance Applications",
+      "School Fees Orders",
+      "Financial Provision for Disabled Children",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -45,6 +163,8 @@ export default function FamilyLawPage() {
       ]}
       legalAid
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Family Law Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }

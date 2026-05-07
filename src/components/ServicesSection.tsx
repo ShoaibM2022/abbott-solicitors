@@ -45,8 +45,8 @@ const services = [
   {
     href: "/conveyancing",
     num: "04",
-    title: "Conveyancing",
-    desc: "Residential and commercial property transfers, remortgages and lease extensions.",
+    title: "Property Law & Conveyancing",
+    desc: "Residential and commercial conveyancing, lease extensions, title disputes and property development.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="7.5" cy="15.5" r="5.5"/>
@@ -57,8 +57,8 @@ const services = [
   {
     href: "/personal-injury",
     num: "05",
-    title: "Personal Injury",
-    desc: "Road traffic accidents, workplace injuries and clinical negligence claims.",
+    title: "Personal Injury Claims",
+    desc: "Road traffic accidents, workplace injuries, medical negligence and serious injury claims on a no win, no fee basis.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 12h4l2-7 4 14 2-7h4"/>
@@ -69,7 +69,7 @@ const services = [
     href: "/employment",
     num: "06",
     title: "Employment Law",
-    desc: "Unfair dismissal, discrimination, settlement agreements and TUPE matters.",
+    desc: "Unfair dismissal, discrimination, settlement agreements, TUPE, whistleblowing and Employment Tribunal claims.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="7" width="20" height="14" rx="2"/>
@@ -80,8 +80,8 @@ const services = [
   {
     href: "/civil-litigation",
     num: "07",
-    title: "Civil Litigation",
-    desc: "Contract disputes, debt recovery, professional negligence and injunctions.",
+    title: "Civil Disputes",
+    desc: "County Court and High Court claims, debt recovery, contract disputes, professional negligence and injunctions.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 3v18M8 21h8"/>

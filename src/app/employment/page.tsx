@@ -1,10 +1,82 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Employment Law — Abbott Solicitors",
-  description: "Employment law solicitors. Unfair dismissal, discrimination, settlement agreements, TUPE and whistleblowing. Free consultation.",
+  description: "Employment law solicitors. Unfair dismissal, discrimination, settlement agreements, TUPE, whistleblowing and Employment Tribunal claims. Free consultation.",
 };
+
+const serviceCategories = [
+  {
+    title: "Employment Contracts & Workplace Documents",
+    items: [
+      "Employment Contracts",
+      "Contract Reviews",
+      "Settlement Agreements",
+      "Staff Handbooks and Workplace Policies",
+      "Confidentiality Clauses",
+      "Restrictive Covenants",
+    ],
+  },
+  {
+    title: "Dismissal, Redundancy & Workplace Disputes",
+    items: [
+      "Unfair Dismissal Claims",
+      "Wrongful Dismissal Claims",
+      "Constructive Dismissal Claims",
+      "Redundancy Advice",
+      "Disciplinary Proceedings",
+      "Grievance Procedures",
+      "Capability Procedures",
+      "Performance Management Issues",
+    ],
+  },
+  {
+    title: "Discrimination, Harassment & Equal Pay",
+    items: [
+      "Workplace Discrimination",
+      "Disability Discrimination",
+      "Race Discrimination",
+      "Sex Discrimination",
+      "Age Discrimination",
+      "Pregnancy and Maternity Discrimination",
+      "Religion or Belief Discrimination",
+      "Sexual Orientation Discrimination",
+      "Gender Reassignment Discrimination",
+      "Harassment at Work",
+      "Victimisation at Work",
+      "Equal Pay Claims",
+    ],
+  },
+  {
+    title: "Employment Tribunal & ACAS",
+    items: [
+      "Employment Tribunal Claims",
+      "ACAS Early Conciliation",
+      "Breach of Employment Contract",
+      "Whistleblowing Claims",
+    ],
+  },
+  {
+    title: "Pay, Leave & Working Arrangements",
+    items: [
+      "Flexible Working Requests",
+      "Holiday Pay Claims",
+      "Unpaid Wages Claims",
+      "Bonus and Commission Disputes",
+      "Sickness Absence Issues",
+    ],
+  },
+  {
+    title: "Business, TUPE & Senior Employees",
+    items: [
+      "TUPE Advice",
+      "Director and Senior Executive Exits",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -44,6 +116,8 @@ export default function EmploymentPage() {
         "Fixed fee and hourly rate options available",
       ]}
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Employment Law Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }

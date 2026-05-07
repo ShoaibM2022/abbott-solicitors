@@ -51,9 +51,9 @@ const areas = [
   },
   {
     href: "/conveyancing",
-    overline: "Conveyancing",
-    title: "Conveyancing",
-    desc: "Residential and commercial conveyancing for buyers, sellers and landlords, efficient, transparent and fully managed from offer to completion.",
+    overline: "Property Law",
+    title: "Property Law & Conveyancing",
+    desc: "Residential and commercial conveyancing, lease extensions, title disputes, adverse possession and property development, fully managed from instruction to completion.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <rect x="6" y="8" width="36" height="32" rx="2"/>
@@ -65,8 +65,8 @@ const areas = [
   {
     href: "/personal-injury",
     overline: "Personal Injury",
-    title: "Personal Injury",
-    desc: "No-win no-fee claims for road traffic accidents, workplace injuries, slips and trips, medical negligence and more.",
+    title: "Personal Injury Claims",
+    desc: "No win, no fee claims for road traffic accidents, workplace injuries, medical negligence, serious injury, CICA and abuse claims.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
@@ -78,7 +78,7 @@ const areas = [
     href: "/employment",
     overline: "Employment Law",
     title: "Employment Law",
-    desc: "Unfair dismissal, discrimination, settlement agreements, TUPE and whistleblowing, protecting employees at every stage.",
+    desc: "Unfair dismissal, constructive dismissal, discrimination, settlement agreements, TUPE, whistleblowing and full Employment Tribunal representation.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <rect x="4" y="16" width="40" height="26" rx="3"/>
@@ -88,9 +88,9 @@ const areas = [
   },
   {
     href: "/civil-litigation",
-    overline: "Civil Litigation",
-    title: "Civil Litigation",
-    desc: "Contract disputes, debt recovery, professional negligence and injunctions: strategic representation in County Court and High Court.",
+    overline: "Civil Disputes",
+    title: "Civil Disputes",
+    desc: "County Court and High Court claims, debt recovery, contract disputes, professional negligence, injunctions and mediation: strategic representation for claimants and defendants.",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="40" height="40">
         <path d="M24 4v40M12 16h24M8 10l8 12M40 10l-8 12M8 38h32"/>

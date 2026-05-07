@@ -1,10 +1,79 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Civil Litigation — Abbott Solicitors",
-  description: "Civil litigation solicitors for contract disputes, debt recovery, professional negligence and injunctions. Free initial consultation.",
+  title: "Civil Disputes — Abbott Solicitors",
+  description: "Civil dispute solicitors. County Court and High Court claims, debt recovery, contract disputes, professional negligence, injunctions and mediation. Free consultation.",
 };
+
+const serviceCategories = [
+  {
+    title: "Court Claims & Civil Litigation",
+    items: [
+      "Civil Litigation",
+      "County Court Claims",
+      "High Court Claims",
+      "Small Claims",
+      "Money Claims",
+      "Civil Procedure Rules (CPR) Advice",
+      "Pre-Action Protocol Advice",
+      "Letters Before Action",
+    ],
+  },
+  {
+    title: "Contract, Debt & Consumer Disputes",
+    items: [
+      "Contract Disputes",
+      "Breach of Contract Claims",
+      "Debt Recovery",
+      "Consumer Disputes",
+      "Professional Negligence Claims",
+    ],
+  },
+  {
+    title: "Property, Land & Neighbour Disputes",
+    items: [
+      "Property Disputes",
+      "Boundary Disputes",
+      "Neighbour Disputes",
+      "Landlord and Tenant Disputes",
+      "Service Charge Disputes",
+      "Leasehold Disputes",
+      "Nuisance Claims",
+      "Trespass Claims",
+    ],
+  },
+  {
+    title: "Business & Commercial Disputes",
+    items: [
+      "Business Disputes",
+      "Commercial Disputes",
+      "Partnership Disputes",
+      "Shareholder Disputes",
+      "Building Disputes",
+      "Construction Disputes",
+    ],
+  },
+  {
+    title: "Injunctions, Reputation & Enforcement",
+    items: [
+      "Injunctions",
+      "Defamation Claims",
+      "Harassment Claims",
+      "Enforcement of Judgments",
+    ],
+  },
+  {
+    title: "Settlement & Dispute Resolution",
+    items: [
+      "Alternative Dispute Resolution (ADR)",
+      "Mediation Support",
+      "Settlement Negotiations",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -16,7 +85,7 @@ const icon = (
 export default function CivilLitigationPage() {
   return (
     <PracticeTemplate
-      overline="Civil Litigation"
+      overline="Civil Disputes"
       title="Civil Dispute"
       titleAccent="Resolution"
       subtitle="Strategic, cost-effective representation in commercial and civil disputes. From debt recovery to professional negligence, we pursue your claim with precision."
@@ -44,6 +113,8 @@ export default function CivilLitigationPage() {
         "Available for both claimants and defendants",
       ]}
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Civil Dispute Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }

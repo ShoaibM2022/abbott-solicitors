@@ -1,10 +1,75 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conveyancing — Abbott Solicitors",
-  description: "Residential and commercial conveyancing solicitors. Property purchases, sales, remortgages and lease extensions handled efficiently.",
+  title: "Property Law & Conveyancing — Abbott Solicitors",
+  description: "Expert property law and conveyancing solicitors. Residential and commercial conveyancing, lease extensions, title disputes and property development. Fixed fees.",
 };
+
+const serviceCategories = [
+  {
+    title: "Residential Conveyancing",
+    items: [
+      "Freehold Property Purchase",
+      "Freehold Property Sale",
+      "Leasehold Property Purchase",
+      "Leasehold Property Sale",
+      "New Build Purchase",
+      "Shared Ownership Purchase",
+      "Shared Ownership Staircasing",
+      "Right to Buy",
+      "Remortgage",
+      "Transfer of Equity",
+      "Equity Release",
+      "Auction Property Purchase",
+      "Buy to Let Conveyancing",
+      "Help to Buy Redemption",
+    ],
+  },
+  {
+    title: "Leasehold, Title & Land Registry",
+    items: [
+      "Lease Extension (Statutory)",
+      "Lease Extension (Informal)",
+      "Collective Enfranchisement",
+      "Deed of Variation",
+      "Land Registry Application",
+      "First Registration of Property",
+      "Unregistered Land",
+      "Property Title Review",
+      "Property Searches",
+      "Stamp Duty Land Tax (SDLT) Advice",
+    ],
+  },
+  {
+    title: "Commercial Property",
+    items: [
+      "Commercial Conveyancing",
+      "Commercial Lease (New)",
+      "Commercial Lease Renewal",
+      "Licence to Assign",
+      "Licence to Alter",
+      "Property Development",
+      "Option Agreement",
+      "Overage Agreement",
+      "Bridging Finance",
+    ],
+  },
+  {
+    title: "Property Disputes & Specialist Matters",
+    items: [
+      "Landlord and Tenant Property Matters",
+      "Service Charge Disputes",
+      "Boundary Disputes",
+      "Easements and Rights of Way",
+      "Adverse Possession",
+      "Restrictive Covenants",
+      "Declaration of Trust",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -16,7 +81,7 @@ const icon = (
 export default function ConveyancingPage() {
   return (
     <PracticeTemplate
-      overline="Conveyancing"
+      overline="Property Law & Conveyancing"
       title="Property Law &"
       titleAccent="Conveyancing"
       subtitle="Efficient, transparent conveyancing for residential and commercial property transactions. We handle your purchase, sale or remortgage from exchange to completion."
@@ -44,6 +109,8 @@ export default function ConveyancingPage() {
         "Both Luton and Birmingham offices",
       ]}
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Property Law Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }

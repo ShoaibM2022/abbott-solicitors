@@ -1,10 +1,84 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Personal Injury — Abbott Solicitors",
-  description: "No win no fee personal injury solicitors. Road traffic accidents, workplace injuries, clinical negligence and more. Free consultation.",
+  title: "Personal Injury Claims — Abbott Solicitors",
+  description: "No win, no fee personal injury solicitors. Road traffic accidents, workplace injuries, medical negligence, serious injury and CICA claims. Free consultation.",
 };
+
+const serviceCategories = [
+  {
+    title: "Road Traffic Accident Claims",
+    items: [
+      "Car Accident Claims",
+      "Motorcycle Accident Claims",
+      "Cycling Accident Claims",
+      "Pedestrian Accident Claims",
+      "Passenger Accident Claims",
+      "Uninsured Driver Claims",
+      "Untraced Driver Claims",
+      "Motor Insurers' Bureau (MIB) Claims",
+    ],
+  },
+  {
+    title: "Workplace Injury Claims",
+    items: [
+      "Accidents at Work",
+      "Manual Handling Injury Claims",
+      "Construction Accident Claims",
+      "Industrial Disease Claims",
+      "Asbestos and Mesothelioma Claims",
+      "Vibration White Finger Claims",
+      "Industrial Deafness Claims",
+    ],
+  },
+  {
+    title: "Public Liability & Other Accident Claims",
+    items: [
+      "Slips, Trips and Falls",
+      "Public Liability Claims",
+      "Occupiers' Liability Claims",
+      "Defective Product Injury Claims",
+      "Holiday Accident Claims",
+      "Sports Injury Claims",
+    ],
+  },
+  {
+    title: "Serious & Catastrophic Injury Claims",
+    items: [
+      "Head Injury Claims",
+      "Brain Injury Claims",
+      "Spinal Injury Claims",
+      "Amputation Claims",
+      "Fatal Accident Claims",
+      "Psychological Injury Claims",
+    ],
+  },
+  {
+    title: "Medical Negligence Claims",
+    items: [
+      "Medical Negligence Claims",
+      "Dental Negligence Claims",
+      "Hospital Negligence Claims",
+      "GP Negligence Claims",
+      "Care Home Negligence Claims",
+      "Cosmetic Surgery Negligence Claims",
+      "Surgical Error Claims",
+      "Misdiagnosis Claims",
+      "Birth Injury Claims",
+    ],
+  },
+  {
+    title: "Criminal Injury & Abuse Claims",
+    items: [
+      "Criminal Injuries Compensation Authority (CICA) Claims",
+      "Abuse Claims",
+      "Assault Injury Claims",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -15,7 +89,7 @@ const icon = (
 export default function PersonalInjuryPage() {
   return (
     <PracticeTemplate
-      overline="Personal Injury"
+      overline="Personal Injury Claims"
       title="Personal Injury"
       titleAccent="Claims"
       subtitle="No win, no fee representation for those injured through no fault of their own. We pursue maximum compensation for injuries caused by accidents, negligence and unsafe conditions."
@@ -43,6 +117,8 @@ export default function PersonalInjuryPage() {
         "UK-wide service including virtual appointments",
       ]}
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Personal Injury Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }

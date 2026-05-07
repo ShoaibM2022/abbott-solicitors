@@ -1,10 +1,118 @@
 import PracticeTemplate from "@/components/PracticeTemplate";
+import CollapsibleServiceList from "@/components/CollapsibleServiceList";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Housing Law — Abbott Solicitors",
   description: "Expert housing law solicitors. Eviction defence, disrepair claims, unlawful eviction and homelessness appeals. Legal Aid available.",
 };
+
+const serviceCategories = [
+  {
+    title: "Possession Proceedings & Eviction Defence",
+    items: [
+      "Section 21 Notice (No-Fault Possession)",
+      "Section 8 Notice (Ground-Based Possession)",
+      "Accelerated Possession Proceedings",
+      "Standard Possession Order",
+      "Warrant of Possession",
+      "Suspension of Warrant of Eviction",
+      "Defence to Possession Claim",
+    ],
+  },
+  {
+    title: "Unlawful Eviction & Harassment",
+    items: [
+      "Unlawful Eviction Injunction",
+      "Harassment by Landlord",
+      "Re-entry to Property Order",
+      "Damages for Unlawful Eviction",
+      "Protection from Eviction Act 1977 Claims",
+    ],
+  },
+  {
+    title: "Housing Disrepair",
+    items: [
+      "Housing Disrepair Claim",
+      "Damp and Mould Claims",
+      "Structural Defects",
+      "Heating, Gas and Electrical Defects",
+      "Pest Infestation Claims",
+      "Compensation for Personal Injury from Disrepair",
+      "Local Authority Enforcement Action",
+    ],
+  },
+  {
+    title: "Homelessness",
+    items: [
+      "Homelessness Application (s193 Housing Act 1996)",
+      "Homelessness Review (s202)",
+      "Homelessness Appeal (s204 County Court)",
+      "Priority Need Assessment",
+      "Local Connection Disputes",
+      "Intentional Homelessness Challenges",
+      "Interim Accommodation Applications",
+    ],
+  },
+  {
+    title: "Social Housing",
+    items: [
+      "Allocation of Social Housing",
+      "Housing Register Applications",
+      "Social Housing Disputes",
+      "Succession to Secure Tenancy",
+      "Right to Buy",
+      "Anti-Social Behaviour Injunction (ASBI)",
+      "Demotion Orders",
+    ],
+  },
+  {
+    title: "Tenancy Agreements & Rights",
+    items: [
+      "Assured Shorthold Tenancy (AST) Advice",
+      "Secure Tenancy Agreement Advice",
+      "Assured Tenancy Agreement Advice",
+      "Licence Agreement Advice",
+      "Notice to Quit",
+      "Tenancy Deposit Disputes",
+      "Tenancy Deposit Scheme (TDS) Compliance",
+    ],
+  },
+  {
+    title: "Rent & Housing Benefit",
+    items: [
+      "Rent Arrears",
+      "Rent Repayment Order (RRO)",
+      "Housing Benefit Disputes",
+      "Universal Credit — Housing Element",
+      "Local Housing Allowance (LHA) Issues",
+      "Overpayment of Housing Benefit Challenges",
+    ],
+  },
+  {
+    title: "Leasehold & Service Charges",
+    items: [
+      "Service Charge Disputes",
+      "Leasehold Enfranchisement",
+      "Statutory Lease Extension",
+      "Right to Manage",
+      "Houses in Multiple Occupation (HMO)",
+      "Freeholder Disputes",
+      "First-Tier Tribunal (Property Chamber) Proceedings",
+    ],
+  },
+  {
+    title: "Boundary & Neighbour Disputes",
+    items: [
+      "Boundary Disputes",
+      "Neighbour Disputes",
+      "Party Wall Matters",
+      "Easements and Rights of Way",
+      "Nuisance and Trespass",
+    ],
+  },
+];
+
 
 const icon = (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="64" height="64">
@@ -44,6 +152,8 @@ export default function HousingLawPage() {
       ]}
       legalAid
       icon={icon}
-    />
+    >
+      <CollapsibleServiceList label="Housing Law Services" categories={serviceCategories} />
+    </PracticeTemplate>
   );
 }
