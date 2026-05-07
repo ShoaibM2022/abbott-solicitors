@@ -222,15 +222,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-[#C9A84C]/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#8A8A94] text-sm font-sans">
-            © {new Date().getFullYear()} Abbott Solicitors. All rights reserved.
-            Authorised and regulated by the Solicitors Regulation Authority.
-          </p>
-          <div className="flex items-center gap-4 text-[#8A8A94]/40 text-[10px] tracking-[0.15em] font-sans">
+        <div className="border-t border-[#C9A84C]/10 pt-8 flex flex-col md:flex-row items-start justify-between gap-4">
+          <div className="flex flex-col gap-2 max-w-3xl">
+            <p className="text-[#8A8A94] text-sm font-sans">
+              © {new Date().getFullYear()} Abbott Solicitors LLP. All rights reserved.
+            </p>
+            <p className="text-[#8A8A94]/70 text-xs font-sans leading-relaxed">
+              Abbott Solicitors LLP is a limited liability partnership registered in England and Wales (No. <span className="text-[#C9A84C]/80">OC&nbsp;______</span>).
+              Registered office: Abbott House, Unit 9, 729 Capability Green, Luton, Bedfordshire LU1 3LU.
+              Authorised and regulated by the Solicitors Regulation Authority (SRA No. <span className="text-[#C9A84C]/80">______</span>).
+              VAT No. <span className="text-[#C9A84C]/80">______</span>.
+            </p>
+          </div>
+          <div className="flex items-center gap-4 text-[#8A8A94]/40 text-[10px] tracking-[0.15em] font-sans shrink-0">
             <Link href="/privacy-policy" className="hover:text-[#8A8A94] transition-colors">Privacy Policy</Link>
             <span>·</span>
             <Link href="/complaints" className="hover:text-[#8A8A94] transition-colors">Complaints</Link>
+            <span>·</span>
+            <Link href="/terms" className="hover:text-[#8A8A94] transition-colors">Terms</Link>
           </div>
         </div>
 

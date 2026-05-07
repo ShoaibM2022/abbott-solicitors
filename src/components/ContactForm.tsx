@@ -20,7 +20,7 @@ export default function ContactForm() {
     setValues((v) => ({ ...v, [id]: e.target.value }));
   };
 
-  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (status === "submitting") return;
 
