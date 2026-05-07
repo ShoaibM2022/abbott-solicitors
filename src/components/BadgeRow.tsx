@@ -9,6 +9,7 @@ interface Badge {
   w: number;
   h: number;
   href: string;
+  height?: number;
 }
 
 export default function BadgeRow({ badges, height = 56 }: { badges: Badge[]; height?: number }) {
@@ -47,25 +48,28 @@ export default function BadgeRow({ badges, height = 56 }: { badges: Badge[]; hei
 
   return (
     <div ref={rowRef} className="flex flex-wrap items-center gap-8 sm:gap-12">
-      {badges.map(({ src, alt, w, h, href }) => (
-        <a
-          key={src}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={alt}
-          className="badge-item bg-white px-5 py-3 rounded flex items-center justify-center hover:brightness-105 transition-[filter] duration-200"
-        >
-          <Image
-            src={src}
-            alt={alt}
-            width={w}
-            height={h}
-            className="object-contain"
-            style={{ height, width: "auto" }}
-          />
-        </a>
-      ))}
+      {badges.map(({ src, alt, w, h, href, height: badgeHeight }) => {
+        const h_ = badgeHeight ?? height;
+        return (
+          <a
+            key={src}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={alt}
+            className="badge-item bg-white px-3 py-2 rounded flex items-center justify-center hover:brightness-105 transition-[filter] duration-200"
+          >
+            <Image
+              src={src}
+              alt={alt}
+              width={w}
+              height={h}
+              className="object-contain"
+              style={{ height: h_, width: "auto" }}
+            />
+          </a>
+        );
+      })}
     </div>
   );
 }

@@ -36,11 +36,20 @@ const offices = [
   },
 ];
 
+const SRA_VALIDATION_URL =
+  "https://www.sra.org.uk/validation?083082065+069110103108105115104067111108111117114+068101102097117108116046112110103+104116116112115058047047097098098111116116115111108105099105116111114115046099111109047&UGxEQk3X8u80cR%2fnb4Rn%2fktnK%2fj9AR21RgJmhwDlvhM%3d";
+
 const badges = [
-  { src: "/badge-sra.png",           alt: "Solicitors Regulation Authority",                    w: 600, h: 600, href: "https://www.sra.org.uk/" },
-  { src: "/badge-legal.png",         alt: "Resolution – First for Family Law",                  w: 852, h: 568, href: "https://resolution.org.uk/" },
-  { src: "/badge-lawsoc-asylum.png", alt: "Law Society Accredited – Immigration & Asylum",      w: 920, h: 500, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-and-asylum-law-accreditation" },
-  { src: "/badge-lawsoc-advanced.png", alt: "Law Society Accredited – Immigration Law Advanced", w: 320, h: 320, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-law-advanced-accreditation" },
+  // General (SRA, Law Society, Resolution) — height 44
+  { src: "/badge-sra-check.png",       alt: "Solicitors Regulation Authority – Check This Firm",    w: 200, h: 60,  href: SRA_VALIDATION_URL,                                                                                                      height: 44 },
+  { src: "/badge-lawsoc.jpeg",         alt: "The Law Society",                                       w: 140, h: 60,  href: "https://www.lawsociety.org.uk/",                                                                                         height: 44 },
+  { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",                     w: 260, h: 80,  href: "https://resolution.org.uk/",                                                                                             height: 44 },
+  // Accredited starburst (CQS, Lexcel) — height 52
+  { src: "/badge-cqs-new.png",         alt: "Law Society Accredited – Conveyancing Quality Scheme",  w: 90,  h: 90,  href: "https://www.lawsociety.org.uk/accreditation/conveyancing-quality-scheme",                                                height: 52 },
+  { src: "/badge-lexcel-new.png",      alt: "Law Society Accredited – Lexcel Practice Management",   w: 90,  h: 90,  href: "https://www.lawsociety.org.uk/accreditation/lexcel",                                                                     height: 52 },
+  // Immigration (Asylum, Advanced) — height 48
+  { src: "/badge-lawsoc-asylum.png",   alt: "Law Society Accredited – Immigration & Asylum",         w: 920, h: 500, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-and-asylum-law-accreditation",         height: 48 },
+  { src: "/badge-lawsoc-advanced.png", alt: "Law Society Accredited – Immigration Law Advanced",     w: 320, h: 320, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-law-advanced-accreditation",           height: 48 },
 ];
 
 const socials = [
