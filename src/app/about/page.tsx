@@ -17,7 +17,7 @@ const stats: [string, string][] = [
   ["2012", "Founded"],
   ["18", "Team Members"],
   ["2", "UK Offices"],
-  ["500+", "Cases Won"],
+  ["5000+", "Cases Won"],
 ];
 
 const promise = [

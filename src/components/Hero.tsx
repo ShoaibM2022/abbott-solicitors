@@ -7,7 +7,7 @@ import gsap from "gsap";
 const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
 const stats = [
-  { value: "500+",      label: "Cases Won" },
+  { value: "5000+",     label: "Cases Won" },
   { value: "2012",      label: "Established" },
   { value: "2",         label: "UK Offices" },
   { value: "Legal Aid", label: "Certified" },
