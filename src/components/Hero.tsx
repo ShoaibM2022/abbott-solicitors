@@ -8,6 +8,7 @@ const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
 const stats = [
   { value: "5000+",     label: "Cases Won" },
+  { value: "98%",       label: "Success Rate" },
   { value: "2012",      label: "Established" },
   { value: "2",         label: "UK Offices" },
   { value: "Legal Aid", label: "Certified" },
@@ -140,13 +141,13 @@ export default function Hero() {
 
       {/* ── Stats strip — visible on landing, no scroll required ── */}
       <div className="wicked-fadeIn relative z-10 border-t border-[#C9A84C]/10 bg-[#0D1B35]/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-2 md:grid-cols-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-2 md:grid-cols-5">
           {stats.map(({ value, label }, i) => (
             <div
               key={i}
-              className={`flex flex-col items-center justify-center py-5 px-4 gap-1.5
-                ${i % 2 === 0 ? "border-r border-[#C9A84C]/10" : ""}
-                ${i < 2 ? "border-b md:border-b-0 border-[#C9A84C]/10" : ""}
+              className={`flex flex-col items-center justify-center py-5 px-4 gap-1.5 border-[#C9A84C]/10
+                ${i % 2 === 0 ? "border-r" : ""}
+                ${i < 4 ? "border-b md:border-b-0" : ""}
                 md:border-r md:last:border-r-0`}
             >
               <span className="serif text-3xl md:text-4xl text-[#C9A84C] font-light tracking-wide">
