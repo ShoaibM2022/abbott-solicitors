@@ -115,8 +115,10 @@ export default function PracticeTemplate({
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {services.map(({ title: t, desc }, i) => (
                 <TiltCard key={t} delay={i * 90} className="p-7 flex flex-col gap-4">
-                  <h3 className="serif text-xl text-[#E8C97A]">{t}</h3>
-                  <div className="w-8 h-px bg-[#C9A84C]/30" />
+                  <div className="flex flex-col gap-3 w-max max-w-full">
+                    <h3 className="serif text-xl text-[#E8C97A]">{t}</h3>
+                    <div className="h-px bg-[#C9A84C]/30" />
+                  </div>
                   <p className="text-[#8A8A94] text-base leading-relaxed font-sans">{desc}</p>
                 </TiltCard>
               ))}

@@ -154,18 +154,18 @@ export default function ServicesSection() {
           {services.map(({ href, num, title, desc, icon }, i) => (
             <TiltCard key={href} delay={i * 75} className="p-6">
               <Link href={href} className="flex flex-col gap-4 h-full group">
-                {/* Icon + title on same row, icon first */}
-                <div className="flex items-center gap-4">
+                {/* Icon + (heading with underline matching its width) */}
+                <div className="flex items-start gap-4">
                   <div className="w-[45px] h-[45px] shrink-0 text-[#C9A84C]/65 group-hover:text-[#C9A84C] group-hover:rotate-6 transition-all duration-300">
                     {icon}
                   </div>
-                  <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300 flex-1">
-                    {title}
-                  </h3>
+                  <div className="flex flex-col gap-2 w-max max-w-full">
+                    <h3 className="serif text-xl font-normal text-[#F0EDE6] leading-snug group-hover:text-[#E8C97A] transition-colors duration-300">
+                      {title}
+                    </h3>
+                    <div className="h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300" />
+                  </div>
                 </div>
-
-                {/* Separator — centered under the 45px icon */}
-                <div className="w-8 h-px bg-[#C9A84C]/25 group-hover:bg-[#C9A84C]/55 transition-colors duration-300 ml-[6.5px]" />
 
                 {/* Description */}
                 <p className="text-[#8A8A94] text-base leading-[1.75] font-sans flex-1">{desc}</p>
