@@ -126,7 +126,15 @@ export default function Hero() {
         {/* ── MOBILE: canvas fills section as background ── */}
         <div className="absolute inset-0 z-0 lg:hidden">
           <HeroScene />
-          <div className="absolute inset-0 bg-[#0A0B0F]/83 pointer-events-none" />
+          {/* Vertical gradient — heavy fade behind the heading top-half (for legibility),
+              lighter through the centre so the globe is actually visible. */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background:
+                "linear-gradient(to bottom, rgba(10,11,15,0.92) 0%, rgba(10,11,15,0.55) 40%, rgba(10,11,15,0.55) 60%, rgba(10,11,15,0.92) 100%)",
+            }}
+          />
         </div>
       </div>
 
