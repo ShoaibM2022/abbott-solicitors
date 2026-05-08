@@ -37,7 +37,7 @@ const values = [
 ];
 
 const accreditations = [
-  { src: "/badge-sra.png",             alt: "Solicitors Regulation Authority",    w: 600, h: 600, href: "https://www.sra.org.uk/" },
+  { src: "/badge-sra.png",             alt: "Solicitors Regulation Authority — Abbott Solicitors LLP register entry",    w: 600, h: 600, href: "https://www.sra.org.uk/consumers/register/organisation/?sraNumber=626995" },
   { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",  w: 852, h: 568, href: "https://resolution.org.uk/" },
   { src: "/badge-lawsoc-asylum.png",   alt: "Law Society – Immigration & Asylum", w: 920, h: 500, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-and-asylum-law-accreditation" },
   { src: "/badge-lawsoc-advanced.png", alt: "Law Society – Immigration Advanced",  w: 320, h: 320, href: "https://www.lawsociety.org.uk/career-advice/individual-accreditations/immigration-law-advanced-accreditation" },
@@ -231,14 +231,14 @@ export default function AboutPage() {
             </h2>
             <div className="w-10 h-px bg-[#C9A84C]/30 mt-4 mb-6" />
             <p className="text-[#8A8A94] text-[15px] leading-[1.9] font-sans">
-              Abbott Solicitors LLP is authorised and regulated by the Solicitors Regulation Authority (SRA). All of our solicitors are subject to the SRA Standards and Regulations, including the SRA Principles, the Code of Conduct for Solicitors and the Code of Conduct for Firms.
+              Abbott Solicitors LLP is authorised and regulated by the Solicitors Regulation Authority (SRA No. 626995). All of our solicitors are subject to the SRA Standards and Regulations, including the SRA Principles, the Code of Conduct for Solicitors and the Code of Conduct for Firms.
             </p>
             <p className="text-[#8A8A94] text-[15px] leading-[1.9] font-sans mt-4">
-              Our regulatory information — including our SRA ID and the rules that govern our practice — can be verified via the SRA&apos;s online register. We also operate within the firm-management standards of Lexcel and the Specialist Quality Mark (SQM).
+              Our regulatory information — including our SRA ID and the rules that govern our practice — can be verified via the SRA&apos;s online register. We are registered in England and Wales as a limited liability partnership (No. OC403192) and also operate within the firm-management standards of Lexcel and the Specialist Quality Mark (SQM).
             </p>
             <div className="mt-8">
               <a
-                href="https://www.sra.org.uk/"
+                href="https://www.sra.org.uk/consumers/register/organisation/?sraNumber=626995"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 text-[#C9A84C] hover:text-[#E8C97A] text-[11px] tracking-[0.22em] uppercase font-sans transition-colors duration-300"

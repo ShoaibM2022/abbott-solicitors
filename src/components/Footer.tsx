@@ -37,12 +37,12 @@ const offices = [
 ];
 
 const SRA_VALIDATION_URL =
-  "https://www.sra.org.uk/validation?083082065+069110103108105115104067111108111117114+068101102097117108116046112110103+104116116112115058047047097098098111116116115111108105099105116111114115046099111109047&UGxEQk3X8u80cR%2fnb4Rn%2fktnK%2fj9AR21RgJmhwDlvhM%3d";
+  "https://www.sra.org.uk/consumers/register/organisation/?sraNumber=626995";
 
 const badges = [
   // General (SRA, Law Society, Resolution) — height 44
   { src: "/badge-sra-check.png",       alt: "Solicitors Regulation Authority – Check This Firm",    w: 200, h: 60,  href: SRA_VALIDATION_URL,                                                                                                      height: 44 },
-  { src: "/badge-lawsoc.jpeg",         alt: "The Law Society",                                       w: 140, h: 60,  href: "https://www.lawsociety.org.uk/",                                                                                         height: 44 },
+  { src: "/badge-lawsoc.jpeg",         alt: "The Law Society — Abbott Solicitors LLP firm record",   w: 140, h: 60,  href: "https://solicitors.lawsociety.org.uk/office/593972/abbott-solicitors-llp",                                               height: 44 },
   { src: "/badge-legal.png",           alt: "Resolution – First for Family Law",                     w: 260, h: 80,  href: "https://resolution.org.uk/",                                                                                             height: 44 },
   // Accredited starburst (CQS, Lexcel) — height 52
   { src: "/badge-cqs-new.png",         alt: "Law Society Accredited – Conveyancing Quality Scheme",  w: 90,  h: 90,  href: "https://www.lawsociety.org.uk/accreditation/conveyancing-quality-scheme",                                                height: 52 },
@@ -228,9 +228,9 @@ export default function Footer() {
               © {new Date().getFullYear()} Abbott Solicitors LLP. All rights reserved.
             </p>
             <p className="text-[#8A8A94]/70 text-xs font-sans leading-relaxed">
-              Abbott Solicitors LLP is a limited liability partnership registered in England and Wales (No. <span className="text-[#C9A84C]/80">OC&nbsp;______</span>).
+              Abbott Solicitors LLP is a limited liability partnership registered in England and Wales (No. OC403192).
               Registered office: Abbott House, Unit 9, 729 Capability Green, Luton, Bedfordshire LU1 3LU.
-              Authorised and regulated by the Solicitors Regulation Authority (SRA No. <span className="text-[#C9A84C]/80">______</span>).
+              Authorised and regulated by the Solicitors Regulation Authority (SRA No. 626995).
               VAT No. <span className="text-[#C9A84C]/80">______</span>.
             </p>
           </div>
