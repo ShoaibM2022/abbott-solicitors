@@ -109,10 +109,10 @@ export default function Navbar() {
     setMobileSection((prev) => (prev === section ? null : section));
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 sm:px-6 lg:px-10 ${
       scrolled ? "bg-[#0A0B0F]/90 backdrop-blur-xl border-b border-[#C9A84C]/10" : "bg-transparent"
     }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto h-20 flex items-center justify-between">
 
         {/* Logo */}
         <Link href="/">

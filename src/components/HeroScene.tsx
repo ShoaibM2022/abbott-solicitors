@@ -1,15 +1,28 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-function WireframeIcosahedron() {
+function usePrefersReducedMotion() {
+  const [reduce, setReduce] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduce(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setReduce(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+  return reduce;
+}
+
+function WireframeGlobe() {
   const ref = useRef<THREE.LineSegments>(null);
 
+  // Sphere with latitude/longitude wireframe — reads as a globe rather than a faceted polyhedron.
   const geometry = useMemo(() => {
-    const geo = new THREE.IcosahedronGeometry(1.6, 1);
-    return new THREE.EdgesGeometry(geo);
+    const geo = new THREE.SphereGeometry(1.92, 32, 18);
+    return new THREE.WireframeGeometry(geo);
   }, []);
 
   useFrame((_, delta) => {
@@ -20,7 +33,7 @@ function WireframeIcosahedron() {
 
   return (
     <lineSegments ref={ref} geometry={geometry}>
-      <lineBasicMaterial color="#C9A84C" transparent opacity={0.7} />
+      <lineBasicMaterial color="#C9A84C" transparent opacity={0.5} />
     </lineSegments>
   );
 }
@@ -133,16 +146,20 @@ function FloatingDots() {
 }
 
 export default function HeroScene() {
+  const reduce = usePrefersReducedMotion();
+  // Honour reduced-motion: render a single static frame instead of a 60fps loop.
+  // Saves battery on phones and respects accessibility preferences.
   return (
     <Canvas
       camera={{ position: [0, 0, 7], fov: 55 }}
       gl={{ antialias: true, alpha: true }}
       style={{ background: "transparent" }}
+      frameloop={reduce ? "demand" : "always"}
     >
       <ambientLight intensity={0.2} />
       <pointLight position={[0, 0, 0]} intensity={1.5} color="#C9A84C" />
       <StarField />
-      <WireframeIcosahedron />
+      <WireframeGlobe />
       <Ring radius={2.8} opacity={0.45} tiltX={0.4} speedY={0.04} speedZ={0.025} />
       <Ring radius={3.5} opacity={0.25} tiltX={-0.8} speedY={0.025} speedZ={-0.03} />
       <Ring radius={4.2} opacity={0.15} tiltX={1.1} speedY={-0.015} speedZ={0.02} />

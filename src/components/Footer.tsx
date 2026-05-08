@@ -120,7 +120,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#070810] border-t border-[#C9A84C]/10 pt-16 pb-8 px-6 lg:px-10">
+    <footer className="bg-[#070810] border-t border-[#C9A84C]/10 pt-16 pb-8 px-4 sm:px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
 
         {/* Top grid */}
